@@ -7,11 +7,12 @@ local fullwine = {
   aged_reds = '#372f2f',
   old_reds = '#644141',
   passed_reds = '#5a3939',
+  wrong_reds = '#7e4138',
 
   -- Foreground
   muscadet = '#fcffca',
-  sherry = '#d79137',
-  white_port = '#efb146',
+  sherry = '#f3d171',
+  white_port ='#ffa500',
   tempranillo = '#8c2828',
   verdicchio = '#cfe94e',
   riesling = '#e4db4a',
@@ -19,8 +20,10 @@ local fullwine = {
   zinfandel = '#ffa9e2',
   syrah_rose = '#b84b4a',
   albarino = '#e3e07f',
-  teroldeguo = '#d995fd',
-  chardonnay = '#f2d023',
+  teroldeguo = '#e378a2 ',
+  pinot_noir = '#e54772 ',
+  sauternes = '#ffee19',
+  nebiolo = '#a92900',
 
   -- Minerals
   graves = '#737373',
@@ -62,14 +65,14 @@ function fullwine.load_syntax()
     Normal = {fg=fullwine.muscadet,bg=fullwine.aged_reds};
     Terminal = {fg = fullwine.muscadet,bg=fullwine.aged_reds};
     SignColumn = {fg=fullwine.muscadet,bg=fullwine.old_reds};
-    -- FoldColumn = {fg=fullwine.medium_green,bg=fullwine.deep_green};
+    FoldColumn = {fg=fullwine.graves,bg=fullwine.aged_reds};
     VertSplit = {fg=fullwine.graves,bg=fullwine.aged_reds};
-    -- Folded = {fg=fullwine.medium_green,bg=fullwine.deep_green};
+    Folded = {fg=fullwine.white_graves,bg=fullwine.aged_reds};
     EndOfBuffer = {fg=fullwine.black_graves,bg=fullwine.none};
-    IncSearch = {fg=fullwine.old_reds,bg=fullwine.sherry,style='bold'};
-    Search = {fg=fullwine.old_reds,bg=fullwine.sherry,style='bold'};
+    IncSearch = {fg=fullwine.old_reds,bg=fullwine.sherry,style='italic'};
+    Search = {fg=fullwine.old_reds,bg=fullwine.sherry,style='italic'};
     ColorColumn = {fg=fullwine.none,bg=fullwine.tempranillo};
-    -- Conceal = {fg=fullwine.medium_green,bg=fullwine.none};
+    Conceal = {fg=fullwine.white_graves,bg=fullwine.none};
     Cursor = {fg=fullwine.none,bg=fullwine.none,style='reverse'};
     vCursor = {fg=fullwine.none,bg=fullwine.none,style='reverse'};
     iCursor = {fg=fullwine.none,bg=fullwine.none,style='reverse'};
@@ -80,39 +83,39 @@ function fullwine.load_syntax()
     LineNr = {fg=fullwine.graves};
     qfLineNr = {fg=fullwine.graves};
     CursorLineNr = {fg=fullwine.sherry,bg=fullwine.old_reds};
-    -- DiffAdd = {fg=fullwine.black,bg=fullwine.dark_green};
-    -- DiffChange = {fg=fullwine.black,bg=fullwine.yellow};
-    -- DiffDelete = {fg=fullwine.black,bg=fullwine.red};
-    -- DiffText = {fg=fullwine.black,bg=fullwine.fg};
+    -- DiffAdd = {fg=fullwine.verdicchio,bg=fullwine.old_reds};
+    -- DiffChange = {fg=fullwine.white_port,bg=fullwine.passed_reds};
+    -- DiffDelete = {fg=fullwine.malbec,bg=fullwine.old_reds};
+    -- DiffText = {fg=fullwine.sherry,bg=fullwine.old_reds};
     Directory = {fg=fullwine.albarino,bg=fullwine.none,style='bold'};
-    -- ErrorMsg = {fg=fullwine.pale_garnet,bg=fullwine.none,style='bold'};
-    -- WarningMsg = {fg=fullwine.deep_yellow,bg=fullwine.none,style='bold'};
-    -- ModeMsg = {fg=fullwine.medium_amber,bg=fullwine.none,style='bold'};
-    -- MatchParen = {fg=fullwine.light_green,bg=fullwine.light_grey};
+    ErrorMsg = {fg=fullwine.malbec,bg=fullwine.none,style='bold'};
+    WarningMsg = {fg=fullwine.riesling,bg=fullwine.none,style='bold'};
+    ModeMsg = {fg=fullwine.verdicchio,bg=fullwine.none,style='bold'};
+    MatchParen = {fg=fullwine.riesling,bg=fullwine.wrong_reds};
     NonText = {fg=fullwine.white_graves};
     Whitespace = {fg=fullwine.graves};
-    -- SpecialKey = {fg=fullwine.medium_grey};
-    -- Pmenu = {fg=fullwine.pale_yellow,bg=fullwine.light_grey};
-    -- PmenuSel = {fg=fullwine.light_grey,bg=fullwine.deep_amber,style='bold'};
-    -- PmenuSbar = {fg=fullwine.none,bg=fullwine.deep_grey};
-    -- PmenuThumb = {fg=fullwine.medium_amber,bg=fullwine.pale_amber};
-    -- WildMenu = {fg=fullwine.pale_yellow,bg=fullwine.medium_grey};
-    -- Question = {fg=fullwine.light_green};
-    -- NormalFloat = {fg=fullwine.pale_yellow,bg=fullwine.medium_grey};
+    SpecialKey = {fg=fullwine.graves};
+    Pmenu = {fg=fullwine.muscadet,bg=fullwine.nebiolo};
+    PmenuSel = {fg=fullwine.nebiolo,bg=fullwine.white_port,style='italic'};
+    PmenuSbar = {fg=fullwine.none,bg=fullwine.nebiolo};
+    PmenuThumb = {fg=fullwine.none,bg=fullwine.muscadet};
+    WildMenu = {fg=fullwine.muscadet,bg=fullwine.nebiolo,style='italic'};
+    Question = {fg=fullwine.verdicchio};
+    NormalFloat = {fg=fullwine.muscadet,bg=fullwine.passed_reds};
     Tabline = {fg=fullwine.white_graves,bg=fullwine.old_reds};
     TabLineFill = {bg=fullwine.old_reds};
     TabLineSel = {fg=fullwine.white_port,bg=fullwine.old_reds};
     StatusLine = {fg=fullwine.muscadet,bg=fullwine.passed_reds,style='italic'};
     StatusLineNC = {fg=fullwine.graves,bg=fullwine.passed_reds,style=fullwine.none};
-    -- SpellBad = {fg=fullwine.redwine,bg=fullwine.none,style='undercurl'};
-    -- SpellCap = {fg=fullwine.medium_amber,bg=fullwine.none,style='undercurl'};
-    -- SpellLocal = {fg=fullwine.pale_amber,bg=fullwine.none,style='undercurl'};
-    -- SpellRare = {fg=fullwine.pale_purple,bg=fullwine.none,style = 'undercurl'};
+    SpellBad = {fg=fullwine.malbec,bg=fullwine.none,style='undercurl'};
+    SpellCap = {fg=fullwine.tempranillo,bg=fullwine.none,style='undercurl'};
+    SpellLocal = {fg=fullwine.sherry,bg=fullwine.none,style='undercurl'};
+    SpellRare = {fg=fullwine.verdicchio,bg=fullwine.none,style = 'undercurl'};
     Visual = {fg=fullwine.none,bg=fullwine.syrah_rose};
     VisualNOS = {fg=fullwine.none,bg=fullwine.syrah_rose};
     QuickFixLine = {fg=fullwine.aged_reds,bg=fullwine.white_port,style='bold'};
-    -- debugPC = {fg=fullwine.medium_amber};
-    -- debugBreakpoint = {fg=fullwine.deep_yellow,bg=fullwine.pale_ruby};
+    debugPC = {fg=fullwine.tempranillo,bg=fullwine.none};
+    debugBreakpoint = {fg=fullwine.malbec,bg=fullwine.none};
 
     Boolean = {fg=fullwine.teroldeguo};
     Number = {fg=fullwine.teroldeguo};
@@ -124,19 +127,19 @@ function fullwine.load_syntax()
     Conditional = {fg=fullwine.malbec,bg=fullwine.none,style=fullwine.none};
     Repeat = {fg=fullwine.malbec,bg=fullwine.none,style=fullwine.none};
     Keyword = {fg=fullwine.malbec,bg=fullwine.none,style=fullwine.none};
-    -- Typedef = {fg=fullwine.pale_ruby};
-    -- Exception = {fg=fullwine.malbec,bg=fullwine.none,style='bold'};
-    -- Statement = {fg=fullwine.malbec,bg=fullwine.none,style='bold'};
+    Typedef = {fg=fullwine.riesling};
+    Exception = {fg=fullwine.malbec,bg=fullwine.none,style='bold'};
+    Statement = {fg=fullwine.riesling,bg=fullwine.none};
     Error = {fg=fullwine.muscadet,bg=fullwine.malbec,style='bold'};
-    -- StorageClass = {fg=fullwine.medium_amber};
-    -- Tag = {fg=fullwine.medium_amber};
-    -- Label = {fg=fullwine.medium_amber};
-    -- Structure = {fg=fullwine.medium_amber};
-    -- Operator = {fg=fullwine.redwine};
-    -- Title = {fg=fullwine.pale_amber,style='bold'};
-    -- Special = {fg=fullwine.light_green};
-    -- SpecialChar = {fg=fullwine.light_green};
-    Type = {fg=fullwine.chardonnay};
+    StorageClass = {fg=fullwine.pinot_noir};
+    Tag = {fg=fullwine.verdicchio};
+    Label = {fg=fullwine.zinfandel};
+    Structure = {fg=fullwine.pinot_noir};
+    Operator = {fg=fullwine.sauternes};
+    Title = {fg=fullwine.riesling,bg=fullwine.none,style='bold'};
+    Special = {fg=fullwine.white_port,bg=fullwine.none};
+    SpecialChar = {fg=fullwine.verdicchio};
+    Type = {fg=fullwine.pinot_noir};
     Function = {fg=fullwine.white_port,bg=fullwine.none,style='bold'};
     String = {fg=fullwine.verdicchio};
     Character = {fg=fullwine.verdicchio};
@@ -146,7 +149,7 @@ function fullwine.load_syntax()
     Comment = {fg=fullwine.white_graves};
     SpecialComment = {fg=fullwine.white_graves};
     Todo = {fg=fullwine.muscadet,bg=fullwine.none,style='bold'};
-    Delimiter = {fg=fullwine.sherry};
+    Delimiter = {fg=fullwine.white_port};
     Ignore = {fg=fullwine.white_graves};
     Underlined = {fg=fullwine.none,style='underline'};
   }
