@@ -31,24 +31,24 @@ local fullwine = {
   black_graves = '#323232',
 }
 
--- function fullwine.terminal_color()
---   vim.g.terminal_color_0 = fullwine.bg
---   vim.g.terminal_color_1 = fullwine.red
---   vim.g.terminal_color_2 = fullwine.green
---   vim.g.terminal_color_3 = fullwine.yellow
---   vim.g.terminal_color_4 = fullwine.blue
---   vim.g.terminal_color_5 = fullwine.violet
---   vim.g.terminal_color_6 = fullwine.cyan
---   vim.g.terminal_color_7 = fullwine.bg1
---   vim.g.terminal_color_8 = fullwine.brown
---   vim.g.terminal_color_9 = fullwine.red
---   vim.g.terminal_color_10 = fullwine.green
---   vim.g.terminal_color_11 = fullwine.yellow
---   vim.g.terminal_color_12 = fullwine.blue
---   vim.g.terminal_color_13 = fullwine.violet
---   vim.g.terminal_color_14 = fullwine.cyan
---   vim.g.terminal_color_15 = fullwine.fg
--- end
+function fullwine.terminal_color()
+  vim.g.terminal_color_0 = fullwine.black_graves
+  vim.g.terminal_color_1 = fullwine.nebiolo
+  vim.g.terminal_color_2 = fullwine.verdicchio
+  vim.g.terminal_color_3 = fullwine.riesling
+  vim.g.terminal_color_4 = fullwine.white_port
+  vim.g.terminal_color_5 = fullwine.teroldeguo
+  vim.g.terminal_color_6 = fullwine.tempranillo
+  vim.g.terminal_color_7 = fullwine.muscadet
+  vim.g.terminal_color_8 = fullwine.white_graves
+  vim.g.terminal_color_9 = fullwine.malbec
+  vim.g.terminal_color_10 = fullwine.albarino
+  vim.g.terminal_color_11 = fullwine.sauternes
+  vim.g.terminal_color_12 = fullwine.sherry
+  vim.g.terminal_color_13 = fullwine.zinfandel
+  vim.g.terminal_color_14 = fullwine.syrah_rose
+  vim.g.terminal_color_15 = fullwine.muscadet
+end
 
 function fullwine.highlight(group, color)
     local style = color.style and 'gui=' .. color.style or 'gui=NONE'
@@ -108,7 +108,7 @@ function fullwine.load_syntax()
     StatusLine = {fg=fullwine.muscadet,bg=fullwine.passed_reds,style='italic'};
     StatusLineNC = {fg=fullwine.graves,bg=fullwine.passed_reds,style=fullwine.none};
     SpellBad = {fg=fullwine.malbec,bg=fullwine.none,style='undercurl'};
-    SpellCap = {fg=fullwine.tempranillo,bg=fullwine.none,style='undercurl'};
+    SpellCap = {fg=fullwine.nebiolo,bg=fullwine.none,style='undercurl'};
     SpellLocal = {fg=fullwine.sherry,bg=fullwine.none,style='undercurl'};
     SpellRare = {fg=fullwine.verdicchio,bg=fullwine.none,style = 'undercurl'};
     Visual = {fg=fullwine.none,bg=fullwine.syrah_rose};
