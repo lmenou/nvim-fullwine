@@ -83,10 +83,10 @@ function fullwine.load_syntax()
     LineNr = {fg=fullwine.graves};
     qfLineNr = {fg=fullwine.graves};
     CursorLineNr = {fg=fullwine.sherry,bg=fullwine.old_reds};
-    -- DiffAdd = {fg=fullwine.verdicchio,bg=fullwine.old_reds};
-    -- DiffChange = {fg=fullwine.white_port,bg=fullwine.passed_reds};
-    -- DiffDelete = {fg=fullwine.malbec,bg=fullwine.old_reds};
-    -- DiffText = {fg=fullwine.sherry,bg=fullwine.old_reds};
+    DiffAdd = {fg=fullwine.nebiolo,bg=fullwine.riesling};
+    DiffChange = {fg=fullwine.muscadet,bg=fullwine.old_reds};
+    DiffDelete = {fg=fullwine.muscadet,bg=fullwine.malbec};
+    DiffText = {fg=fullwine.sherry,bg=fullwine.old_reds};
     Directory = {fg=fullwine.albarino,bg=fullwine.none,style='bold'};
     ErrorMsg = {fg=fullwine.malbec,bg=fullwine.none,style='bold'};
     WarningMsg = {fg=fullwine.riesling,bg=fullwine.none,style='bold'};
