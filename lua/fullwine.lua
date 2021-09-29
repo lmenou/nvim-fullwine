@@ -33,12 +33,12 @@ local fullwine = {
 
 function fullwine.terminal_color()
   vim.g.terminal_color_0 = fullwine.black_graves
-  vim.g.terminal_color_1 = fullwine.nebiolo
+  vim.g.terminal_color_1 = fullwine.malbec
   vim.g.terminal_color_2 = fullwine.verdicchio
   vim.g.terminal_color_3 = fullwine.riesling
   vim.g.terminal_color_4 = fullwine.white_port
   vim.g.terminal_color_5 = fullwine.teroldeguo
-  vim.g.terminal_color_6 = fullwine.tempranillo
+  vim.g.terminal_color_6 = fullwine.nebiolo
   vim.g.terminal_color_7 = fullwine.muscadet
   vim.g.terminal_color_8 = fullwine.white_graves
   vim.g.terminal_color_9 = fullwine.malbec
@@ -168,8 +168,9 @@ function fullwine.colorscheme()
   for group,colors in pairs(syntax) do
     fullwine.highlight(group,colors)
   end
+  fullwine.terminal_color()
 end
 
-fullwine.colorscheme()
+-- fullwine.colorscheme()
 
 return fullwine
