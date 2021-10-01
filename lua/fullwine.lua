@@ -27,7 +27,7 @@ local fullwine = {
 
   -- Minerals
   graves = '#737373',
-  white_graves = '#858585',
+  white_graves = '#5c5c5c',
   black_graves = '#323232',
 }
 
@@ -69,8 +69,8 @@ function fullwine.load_syntax()
     VertSplit = {fg=fullwine.graves,bg=fullwine.aged_reds};
     Folded = {fg=fullwine.white_graves,bg=fullwine.aged_reds};
     EndOfBuffer = {fg=fullwine.black_graves,bg=fullwine.none};
-    IncSearch = {fg=fullwine.old_reds,bg=fullwine.sherry,style='italic'};
-    Search = {fg=fullwine.old_reds,bg=fullwine.sherry,style='italic'};
+    IncSearch = {fg=fullwine.old_reds,bg=fullwine.white_port,style='bold'};
+    Search = {fg=fullwine.old_reds,bg=fullwine.sherry,style='bold'};
     ColorColumn = {fg=fullwine.none,bg=fullwine.tempranillo};
     Conceal = {fg=fullwine.white_graves,bg=fullwine.none};
     Cursor = {fg=fullwine.none,bg=fullwine.none,style='reverse'};
@@ -91,7 +91,7 @@ function fullwine.load_syntax()
     ErrorMsg = {fg=fullwine.malbec,bg=fullwine.none,style='bold'};
     WarningMsg = {fg=fullwine.riesling,bg=fullwine.none,style='bold'};
     ModeMsg = {fg=fullwine.verdicchio,bg=fullwine.none,style='bold'};
-    MatchParen = {fg=fullwine.riesling,bg=fullwine.wrong_reds};
+    MatchParen = {fg=fullwine.riesling,bg=fullwine.wrong_reds,style='undercurl'};
     NonText = {fg=fullwine.white_graves};
     Whitespace = {fg=fullwine.graves};
     SpecialKey = {fg=fullwine.graves};
@@ -171,6 +171,6 @@ function fullwine.colorscheme()
   fullwine.terminal_color()
 end
 
--- fullwine.colorscheme()
+fullwine.colorscheme()
 
 return fullwine
