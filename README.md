@@ -34,13 +34,13 @@ more is to follow.
 
 If you did not installed tree-sitter, simply set the global value
 `fullwine_plugin_hi_group` to 0.  
-- vimL
+- vimL (in your init.vim)
 ```vim
 let g:fullwine_plugin_hi_group = 0
 ```
 or  
 
-- lua
+- lua (in your init.lua)
 ```lua
 vim.g.fullwine_plugin_hi_group = 0
 ```
