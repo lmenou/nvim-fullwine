@@ -70,7 +70,7 @@ local syntax = {
   Keyword = {fg=fullwine.malbec,bg=fullwine.none,style=fullwine.none};
   Typedef = {fg=fullwine.riesling};
   Exception = {fg=fullwine.malbec,bg=fullwine.none,style='bold'};
-  Statement = {fg=fullwine.riesling,bg=fullwine.none};
+  Statement = {fg=fullwine.malbec,bg=fullwine.none};
   Error = {fg=fullwine.muscadet,bg=fullwine.malbec,style='bold'};
   StorageClass = {fg=fullwine.pinot_noir};
   Tag = {fg=fullwine.verdicchio};
