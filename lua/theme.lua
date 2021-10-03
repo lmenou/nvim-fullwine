@@ -165,6 +165,7 @@ local treesitter = {
 	TSVariable = { fg = fullwine.muscadet },
 	TSVariableBuiltin = { fg = fullwine.nebiolo },
 	TSWarning = syntax.WarningMsg,
+  TSComment = syntax.Comment,
 }
 
 
@@ -174,4 +175,13 @@ local theme = {
   treesitter = treesitter,
 }
   
+if vim.g.fullwine_italicize == 0 then
+  theme.syntax.PmenuSel = {fg=fullwine.nebiolo,bg=fullwine.white_port};
+  theme.syntax.WildMenu = {fg=fullwine.muscadet,bg=fullwine.nebiolo};
+  theme.syntax.StatusLine = {fg=fullwine.muscadet,bg=fullwine.passed_reds};
+  theme.syntax.Comment = {fg=fullwine.white_graves};
+  theme.syntax.SpecialComment = {fg=fullwine.white_graves};
+  theme.treesitter.TSComment = {fg=fullwine.white_graves}
+end
+
 return theme
