@@ -188,3 +188,4 @@ if vim.g.fullwine_italicize == 0 then
 end
 
 return theme
+-- lua: et tw=79 ts=2 sts=2 sw=2
