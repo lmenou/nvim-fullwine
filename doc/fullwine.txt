@@ -1,47 +1,41 @@
-*fullwine.txt*  -- Neovim colorscheme
+*fullwine.txt*   Neovim colorscheme inspired from wine colors 
 
 Author: lmenou
 License: Apache 2.0 (See LICENSE file for details)
 
-				*fullwine* - *nvim-fullwine*
+*fullwine* - *nvim-fullwine*
 
 This is a colorscheme entirely written in lua, inspired from the colors of
 wine.
 
-1. Configuration				|fullwine-configuration|
-2. Contributing					|fullwine-contributing|
-3. Acknowledgements				|fullwine-acknowledgements|
-
-Requirement: Neovim 0.5
+1. Configuration	|fullwine-configuration|
+2. Contributing         |fullwine-contributing|
+3. Acknowledgements	|fullwine-acknowledgements|
 
 ============================================================================
-1. Configuration				*fullwine-configuration*
+1. Configuration        *fullwine-configuration*
 
-						*g:fullwine_italicize*
-						*vim.g.fullwine_italicize*
-g:fullwine_italicize				If this value is set to 1 (the
-						default) in your init file
-						(|init.lua| or |init.vim|),
-						some pieces of the colorscheme
-						are italicized, namely, the
-						|statusline|, the |wilmenu|,
-						the completion selection in
-						popup menu and the comments in
-						the code.
+*g:fullwine_italicize* 
+*vim.g.fullwine_italicize* 
 
-						*g:fullwine_plugin_hi_group*
-						*vim.g.fullwine_plugin_hi_group*
-g:fullwine_plugin_hi_group			If this value is set to 1 (the
-						default) in your init file
-						(|init.vim| or |init.lua|),
-						some famous plugins are
-						supported by the colorscheme.
-						Currently only tree-sitter is
-						supported. Let us see what is
-						going to follow.
+By default, some pieces of the colorscheme are italicized, namely, the
+|statusline|, the |wilmenu|, the completion selection in popup menu and the
+comments in the code. Set to 0 to suppress italics.
+>
+    let g:fullwine_italicize = 1
+    vim.g.fullwine_italicize = 1
+<
+*g:fullwine_plugin_hi_group*
+*vim.g.fullwine_plugin_hi_group*
 
+The colorscheme is supported by tree-sitter, set this value to 0 to supress
+tree-sitter support.
+>
+    let g:fullwine_plugin_hi_group = 1
+    vim.g.fullwine_plugin_hi_group = 1
+<
 ============================================================================
-2. Contributing					*fullwine-contributing*
+2. Contributing         *fullwine-contributing*
 
 If you are unsatisfied with some specifications of the colorscheme, please
 feel free to raise an issue at https://github.com/lmenou/nvim-fullwine/issues
@@ -52,11 +46,11 @@ If you encounter a bug with the colorscheme, please feel free to report it
 also.
 
 ============================================================================
-3. Acknowledgements				|fullwine-acknowledgements|
+3. Acknowledgements       |fullwine-acknowledgements|
 
 First, thank you for giving a try to the colorscheme.
 
-Credits for the Inspiration (mostly the code-base):
+Credits for the inspiration (mostly the code-base):
 
 - lunarised -- https://github.com/alexblackie/lunarised
 - vim-gruvbox8 -- https://github.com/lifepillar/vim-gruvbox8
