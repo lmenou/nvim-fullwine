@@ -166,6 +166,9 @@ local treesitter = {
 	TSVariableBuiltin = { fg = fullwine.nebiolo },
 	TSWarning = syntax.WarningMsg,
   TSComment = syntax.Comment,
+  TSNote = syntax.ModeMsg,
+  TSDanger = syntax.ErrorMsg,
+  TSTitle = syntax.Title,
 }
 
 
