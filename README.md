@@ -8,11 +8,32 @@ Neovim colorscheme in lua inspired from wine colors.
 With your favourite plugin manager, you can have a look at
 [packer.nvim](https://github.com/wbthomason/packer.nvim) or [vim
 plug](https://github.com/junegunn/vim-plug) or even use the native solution
-for plugins in Neovim (See `:help packages`).
+for plugins in Neovim (See `:help packages`).  
 
-## Cautions
-Currently no plugins are supported by the colorscheme, though you can give it
-a try. Let us hope more is to follow
+To give it a try, it is very simple, type `:colorscheme fullwine` and hit
+Enter. If you wish to use it effectively, simply set `colorscheme fullwine` at
+the end of your `init.vim`. If you are already full lua, write
+`require('fullwine').colorscheme()` in your `init.lua`.
+
+## Configuration
+
+### Plugin support
+The colorscheme support native-LSP and tree-sitter by default. Let us hope
+more is to follow.  
+
+If you did not installed tree-sitter, simply set the global value
+`fullwine_plugin_hi` to 0. In your `init.vim`, it is `let g:fullwine_plugin_hi
+= 0`, in your `init.lua`: `vim.g.fullwine_plugin_hi = 0`.
+
+### Italics
+Some things are in italic by default, if you do not like that, simply set the
+global value `fullwine_italicize` to 0 (as above).
+
+## Contributing
+ I am totally open to critics ! Raise an issue if you are not satisfied with
+ something or even submit a PR, I will be pleased to discuss about both.
+
+ Please, feel free to report any bugs also.
 
 ## License 
 This plugin is licensed under Apache 2.0 (same as Neovim). See the
