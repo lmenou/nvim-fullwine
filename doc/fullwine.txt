@@ -1,1 +1,64 @@
-vim:tw=78:ts=8:ft=help:norl:
+*fullwine.txt*  -- Neovim colorscheme
+
+Author: lmenou
+License: Apache 2.0 (See LICENSE file for details)
+
+				*fullwine* - *nvim-fullwine*
+
+This is a colorscheme entirely written in lua, inspired from the colors of
+wine.
+
+1. Configuration				|fullwine-configuration|
+2. Contributing					|fullwine-contributing|
+3. Acknowledgements				|fullwine-acknowledgements|
+
+Requirement: Neovim 0.5
+
+============================================================================
+1. Configuration				*fullwine-configuration*
+
+						*g:fullwine_italicize*
+						*vim.g.fullwine_italicize*
+g:fullwine_italicize				If this value is set to 1 (the
+						default) in your init file
+						(|init.lua| or |init.vim|),
+						some pieces of the colorscheme
+						are italicized, namely, the
+						|statusline|, the |wilmenu|,
+						the completion selection in
+						popup menu and the comments in
+						the code.
+
+						*g:fullwine_plugin_hi_group*
+						*vim.g.fullwine_plugin_hi_group*
+g:fullwine_plugin_hi_group			If this value is set to 1 (the
+						default) in your init file
+						(|init.vim| or |init.lua|),
+						some famous plugins are
+						supported by the colorscheme.
+						Currently only tree-sitter is
+						supported. Let us see what is
+						going to follow.
+
+============================================================================
+2. Contributing					*fullwine-contributing*
+
+If you are unsatisfied with some specifications of the colorscheme, please
+feel free to raise an issue at https://github.com/lmenou/nvim-fullwine/issues
+or even submit a pull request, I am open to critics and discussion. The same
+applies for the code base.
+
+If you encounter a bug with the colorscheme, please feel free to report it
+also.
+
+============================================================================
+3. Acknowledgements				|fullwine-acknowledgements|
+
+First, thank you for giving a try to the colorscheme.
+
+Credits for the Inspiration (mostly the code-base):
+
+- lunarised (https://github.com/alexblackie/lunarised)
+- vim-gruvbox8 (https://github.com/lifepillar/vim-gruvbox8)
+- gruvbox (https://github.com/morhetz/gruvbox)
+- zephyr-nvim (https://github.com/glepnir/zephyr-nvim)
