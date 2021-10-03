@@ -1,0 +1,9 @@
+fullwine	fullwine.txt	/*fullwine*
+fullwine-configuration	fullwine.txt	/*fullwine-configuration*
+fullwine-contributing	fullwine.txt	/*fullwine-contributing*
+fullwine.txt	fullwine.txt	/*fullwine.txt*
+g:fullwine_italicize	fullwine.txt	/*g:fullwine_italicize*
+g:fullwine_plugin_hi_group	fullwine.txt	/*g:fullwine_plugin_hi_group*
+nvim-fullwine	fullwine.txt	/*nvim-fullwine*
+vim.g.fullwine_italicize	fullwine.txt	/*vim.g.fullwine_italicize*
+vim.g.fullwine_plugin_hi_group	fullwine.txt	/*vim.g.fullwine_plugin_hi_group*

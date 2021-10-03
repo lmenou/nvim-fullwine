@@ -58,7 +58,7 @@ First, thank you for giving a try to the colorscheme.
 
 Credits for the Inspiration (mostly the code-base):
 
-- lunarised (https://github.com/alexblackie/lunarised)
-- vim-gruvbox8 (https://github.com/lifepillar/vim-gruvbox8)
-- gruvbox (https://github.com/morhetz/gruvbox)
-- zephyr-nvim (https://github.com/glepnir/zephyr-nvim)
+- lunarised -- https://github.com/alexblackie/lunarised
+- vim-gruvbox8 -- https://github.com/lifepillar/vim-gruvbox8
+- gruvbox -- https://github.com/morhetz/gruvbox
+- zephyr-nvim -- https://github.com/glepnir/zephyr-nvim
