@@ -1,6 +1,7 @@
 local fullwine = require('wines')
 
 local syntax = {
+  -- Layout
   Normal = {fg=fullwine.muscadet,bg=fullwine.aged_reds};
   Terminal = {fg = fullwine.muscadet,bg=fullwine.aged_reds};
   SignColumn = {fg=fullwine.muscadet,bg=fullwine.old_reds};
@@ -56,6 +57,7 @@ local syntax = {
   debugPC = {fg=fullwine.tempranillo,bg=fullwine.none};
   debugBreakpoint = {fg=fullwine.malbec,bg=fullwine.none};
 
+  -- Dev environment
   Boolean = {fg=fullwine.teroldeguo};
   Number = {fg=fullwine.teroldeguo};
   Float = {fg=fullwine.teroldeguo};
@@ -93,6 +95,25 @@ local syntax = {
   Underlined = {fg=fullwine.none,style='underline'};
 }
 
+local lspdiagnostic = {
+	LspDiagnosticsDefaultError = syntax.ErrorMsg,
+	LspDiagnosticsFloatingError = syntax.ErrorMsg,
+	LspDiagnosticsSignError = syntax.ErrorMsg,
+	LspDiagnosticsDefaultWarning = syntax.WarningMsg,
+	LspDiagnosticsFloatingWarning = syntax.WarningMsg,
+	LspDiagnosticsSignWarning = syntax.WarningMsg,
+	LspDiagnosticsDefaultHint = syntax.ModeMsg,
+	LspDiagnosticsFloatingHint = syntax.ModeMsg,
+	LspDiagnosticsSignHint = syntax.ModeMsg,
+	LspDiagnosticsDefaultInformation = syntax.ModeMsg,
+	LspDiagnosticsFloatingInformation = syntax.ModeMsg,
+	LspDiagnosticsSignInformation = syntax.ModeMsg,
+	LspDiagnosticsUnderlineError = {fg = fullwine.malbec, style = 'undercurl'},
+	LspDiagnosticsUnderlineHint  = {fg = fullwine.verdicchio, style = 'undercurl'},
+	LspDiagnosticsUnderlineInfo  = {fg = fullwine.verdicchio, style = 'undercurl'},
+	LspDiagnosticsUnderlineWarning = {fg = fullwine.riesling, style = 'undercurl'},
+}
+
 
 local treesitter = {
 	TSAnnotation = { fg = fullwine.nebiolo, style = 'bold' },
@@ -103,9 +124,9 @@ local treesitter = {
 	TSConstBuiltin = { fg = fullwine.pinot_noir },
 	TSConstMacro = { fg = fullwine.pinot_noir },
 	TSConstant = syntax.Constant,
-	TSConstructor = syntax.Special,
-	TSEmphasis = { fg = fullwine.muscadet, style = 'bold' },
-	TSError = syntax.Error,
+	TSConstructor = syntax.Function,
+	TSEmphasis = { fg = fullwine.pinot_noir, style = 'bold' },
+	TSError = syntax.ErrorMsg,
 	TSException = syntax.Exception,
 	TSField = { fg = fullwine.riesling },
 	TSFloat = syntax.Float,
@@ -114,7 +135,7 @@ local treesitter = {
 	TSFunction = syntax.Function,
 	TSInclude = syntax.Include,
 	TSKeyword = syntax.Keyword,
-	TSKeywordFunction = {fg=fullwine.white_port,style='italic'},
+	TSKeywordFunction = syntax.Keyword,
 	TSLabel = syntax.Label,
 	TSLiteral = { fg = fullwine.muscadet },
 	TSMethod = { fg = fullwine.riesling },
@@ -149,6 +170,7 @@ local treesitter = {
 
 local theme = {
   syntax = syntax,
+  lspdiagnostic = lspdiagnostic,
   treesitter = treesitter,
 }
   

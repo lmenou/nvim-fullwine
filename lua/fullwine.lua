@@ -39,6 +39,10 @@ return {
 			highlight(group, colors)
 		end
 
+		for group, colors in pairs(theme.lspdiagnostic) do
+			highlight(group, colors)
+		end
+
 		for group, colors in pairs(theme.treesitter) do
 			highlight(group, colors)
 		end
