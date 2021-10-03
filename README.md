@@ -1,7 +1,8 @@
-# nvim-fullwine 
-Neovim colorscheme in lua inspired from wine colors.
+# nvim-fullwine
+Neovim colorscheme in lua inspired from wine colors and supported by
+tree-sitter.
 
-## Requirements 
+## Requirements
 - [Neovim 0.5](https://github.com/neovim/neovim)  
 
 ## Installation 
@@ -11,9 +12,19 @@ plug](https://github.com/junegunn/vim-plug) or even use the native solution
 for plugins in Neovim (See `:help packages`).  
 
 To give it a try, it is very simple, type `:colorscheme fullwine` and hit
-Enter. If you wish to use it effectively, simply set `colorscheme fullwine` at
-the end of your `init.vim`. If you are already full lua, write
-`require('fullwine').colorscheme()` in your `init.lua`.
+Enter.  
+
+If you wish to use it effectively:  
+- vimL (in your init.vim)  
+```vim
+colorscheme fullwine
+```
+or  
+
+- lua (in your init.lua)
+```
+require('fullwine').colorscheme()
+```
 
 ## Configuration
 
@@ -22,8 +33,17 @@ The colorscheme support native-LSP and tree-sitter by default. Let us hope
 more is to follow.  
 
 If you did not installed tree-sitter, simply set the global value
-`fullwine_plugin_hi` to 0. In your `init.vim`, it is `let g:fullwine_plugin_hi
-= 0`, in your `init.lua`: `vim.g.fullwine_plugin_hi = 0`.
+`fullwine_plugin_hi_group` to 0.  
+- vimL
+```vim
+let g:fullwine_plugin_hi_group = 0
+```
+or  
+
+- lua
+```lua
+vim.g.fullwine_plugin_hi_group = 0
+```
 
 ### Italics
 Some things are in italic by default, if you do not like that, simply set the
