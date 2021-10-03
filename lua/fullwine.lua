@@ -12,11 +12,11 @@ function highlight(group, color)
 end
 
 return {
-	colorscheme = function ()
-		if vim.fn.exists("syntax_on") then vim.cmd("syntax reset") end
-		vim.o.background = "dark"
-		vim.o.termguicolors = true
-		vim.g.colors_name = "fullwine"
+  colorscheme = function ()
+    if vim.fn.exists("syntax_on") then vim.cmd("syntax reset") end
+    vim.o.background = "dark"
+    vim.o.termguicolors = true
+    vim.g.colors_name = "fullwine"
 
     if vim.g.fullwine_plugin_hi_group == nil then
       vim.g.fullwine_plugin_hi_group = 1
@@ -39,13 +39,13 @@ return {
     vim.g.terminal_color_14 = fullwine.syrah_rose
     vim.g.terminal_color_15 = fullwine.muscadet
 
-		for group, colors in pairs(theme.syntax) do
-			highlight(group, colors)
-		end
+    for group, colors in pairs(theme.syntax) do
+      highlight(group, colors)
+    end
 
-		for group, colors in pairs(theme.lspdiagnostic) do
-			highlight(group, colors)
-		end
+    for group, colors in pairs(theme.lspdiagnostic) do
+      highlight(group, colors)
+    end
 
     if vim.g.fullwine_plugin_hi_group == 1 then
       for group, colors in pairs(theme.treesitter) do
@@ -53,7 +53,7 @@ return {
       end
     end
 
-	end
+  end
 }
 
 -- lua: et tw=79 ts=2 sts=2 sw=2
