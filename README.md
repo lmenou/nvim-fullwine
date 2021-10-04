@@ -2,8 +2,11 @@
 Neovim colorscheme in lua inspired from wine colors and supported by
 tree-sitter.
 
+![fullwine](https://github.com/lmenou/nvim-fullwine/blob/master/examples/example_fullwine.png)
+
 ## Requirements
 - [Neovim 0.5](https://github.com/neovim/neovim)  
+- Terminal that supports gui colors
 
 ## Installation 
 With your favourite plugin manager, you can have a look at
