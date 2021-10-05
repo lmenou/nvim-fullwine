@@ -18,10 +18,6 @@ return {
     vim.o.termguicolors = true
     vim.g.colors_name = "fullwine"
 
-    if vim.g.fullwine_plugin_hi_group == nil then
-      vim.g.fullwine_plugin_hi_group = 1
-    end
-
     vim.g.terminal_color_0 = fullwine.black_graves
     vim.g.terminal_color_1 = fullwine.malbec
     vim.g.terminal_color_2 = fullwine.verdicchio
@@ -47,7 +43,7 @@ return {
       highlight(group, colors)
     end
 
-    if vim.g.fullwine_plugin_hi_group == 1 then
+    if vim.g.fullwine_plugin_hi_group == nil then
       for group, colors in pairs(theme.treesitter) do
         highlight(group, colors)
       end
