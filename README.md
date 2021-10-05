@@ -6,7 +6,8 @@ tree-sitter.
 
 ## Requirements
 - [Neovim 0.5](https://github.com/neovim/neovim)  
-- Terminal that supports gui colors
+- If using the terminal as the UI, the latter should support gui colors, i.e `set
+  termguicolors` is on by default.
 
 ## Installation 
 With your favourite plugin manager, you can have a look at
