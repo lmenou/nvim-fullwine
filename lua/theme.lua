@@ -138,7 +138,7 @@ local treesitter = {
   TSKeywordFunction = syntax.Keyword,
   TSLabel = syntax.Label,
   TSLiteral = { fg = fullwine.muscadet },
-  TSMethod = { fg = fullwine.riesling },
+  TSMethod = { fg = fullwine.white_port, style='bold' },
   TSNamespace = { fg = fullwine.riesling },
   TSNumber = syntax.Number,
   TSOperator = syntax.Operator,
