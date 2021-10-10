@@ -4,7 +4,7 @@
 
 local fullwine = {
   -- Background
-  aged_reds = '#453b3b',
+  aged_reds = '#362e2e',
   old_reds = '#644141',
   passed_reds = '#5a3939',
   wrong_reds = '#7e4138',
@@ -223,3 +223,4 @@ return {
   fullwine = fullwine,
 }
 -- lua: et tw=79 ts=2 sts=2 sw=2
+

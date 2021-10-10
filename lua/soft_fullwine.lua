@@ -1,5 +1,5 @@
-local fullwine = require('theme').fullwine
-local theme = require('theme').theme
+local fullwine = require('soft_theme').fullwine
+local theme = require('soft_theme').theme
 
 function highlight(group, color)
     local style = color.style and 'gui=' .. color.style or 'gui=NONE'
@@ -53,3 +53,4 @@ return {
 }
 
 -- lua: et tw=79 ts=2 sts=2 sw=2
+

@@ -1,4 +1,4 @@
-*fullwine.txt*   Neovim colorscheme inspired from wine colors 
+*fullwine.txt*	 Neovim colorscheme inspired from wine colors 
 
 Author: lmenou
 License: Apache 2.0 (See LICENSE file for details)
@@ -8,12 +8,22 @@ License: Apache 2.0 (See LICENSE file for details)
 This is a colorscheme entirely written in lua, inspired from the colors of
 wine.
 
+To use the colorscheme on a day to day basis, it is very simple, at the end of
+your |init.vim|, write:
+>
+    colorscheme fullwine
+<
+But if you are already full lua, then at the end of your |init.lua|. write:
+>
+    require.('fullwine').colorscheme()
+<
+
 1. Configuration	|fullwine-configuration|
-2. Contributing         |fullwine-contributing|
+2. Contributing		|fullwine-contributing|
 3. Acknowledgements	|fullwine-acknowledgements|
 
 ============================================================================
-1. Configuration        *fullwine-configuration*
+1. Configuration	*fullwine-configuration*
 
 *g:fullwine_italicize* 
 *vim.g.fullwine_italicize* 
@@ -21,8 +31,13 @@ wine.
 By default, some pieces of the colorscheme are italicized, namely, the
 |statusline|, the |wilmenu|, the completion selection in popup menu and the
 comments in the code. Set to 0 to suppress italics.
+
+- vimL (|init.vim|)
 >
     let g:fullwine_italicize = 1
+<
+- lua (|init.lua|)
+>
     vim.g.fullwine_italicize = 1
 <
 *g:fullwine_plugin_hi_group*
@@ -30,12 +45,17 @@ comments in the code. Set to 0 to suppress italics.
 
 The colorscheme is supported by tree-sitter, set this value to 0 to supress
 tree-sitter support.
+
+- vimL (|init.vim|)
 >
     let g:fullwine_plugin_hi_group = 1
+<
+- lua (|init.lua|)
+>
     vim.g.fullwine_plugin_hi_group = 1
 <
 ============================================================================
-2. Contributing         *fullwine-contributing*
+2. Contributing		*fullwine-contributing*
 
 If you are unsatisfied with some specifications of the colorscheme, please
 feel free to raise an issue at https://github.com/lmenou/nvim-fullwine/issues
@@ -46,7 +66,7 @@ If you encounter a bug with the colorscheme, please feel free to report it
 also.
 
 ============================================================================
-3. Acknowledgements       |fullwine-acknowledgements|
+3. Acknowledgements	  |fullwine-acknowledgements|
 
 First, thank you for giving a try to the colorscheme.
 
