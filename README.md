@@ -2,7 +2,7 @@
 Neovim colorscheme in lua inspired from wine colors and supported by
 tree-sitter.
 
-![fullwine](https://github.com/lmenou/nvim-fullwine/blob/master/examples/example_fullwine.png)
+![fullwine](https://github.com/lmenou/nvim-fullwine/blob/master/examples/example_fullwine2.png)
 
 ## Requirements
 - [Neovim 0.5](https://github.com/neovim/neovim)  
