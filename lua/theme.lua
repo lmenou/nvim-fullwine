@@ -4,7 +4,7 @@
 
 local fullwine = {
   -- Background
-  aged_reds = '#453b3b',
+  aged_reds = '#372f2f',
   old_reds = '#644141',
   passed_reds = '#5a3939',
   wrong_reds = '#7e4138',

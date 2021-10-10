@@ -2,6 +2,6 @@
 -- Author: lmenou
 -- License: Apache 2.0
 
-require('hard_fullwine').colorscheme()
+require('fullwine_hard').colorscheme()
 -- lua: et tw=79 ts=2 sts=2 sw=2
 
