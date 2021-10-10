@@ -30,6 +30,10 @@ or
 require('fullwine').colorscheme()
 ```
 
+There exists a soft and a hard version of the colorscheme. To use or try them,
+replace `fullwine` by respectively `fullwine_soft` and `fullwine_hard` in the
+commands specified above. Simple, isn't it ?
+
 ## Configuration
 
 ### Plugin support
