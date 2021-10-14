@@ -8,6 +8,7 @@ local fullwine = {
   old_reds = '#644141',
   passed_reds = '#5a3939',
   wrong_reds = '#7e4138',
+  discus = '#cec7d4',
 
   -- Foreground
   muscadet = '#fcffca',
@@ -22,6 +23,8 @@ local fullwine = {
   albarino = '#e3e07f',
   teroldeguo = '#e378a2 ',
   pinot_noir = '#e54772 ',
+  mourvedre = '#ff9494',
+  grenache = '#79a48f',
   sauternes = '#ffee19',
   nebiolo = '#a92900',
 
@@ -92,10 +95,10 @@ local syntax = {
   Boolean = {fg=fullwine.teroldeguo};
   Number = {fg=fullwine.teroldeguo};
   Float = {fg=fullwine.teroldeguo};
-  PreProc = {fg=fullwine.teroldeguo};
-  PreCondit = {fg=fullwine.teroldeguo};
+  PreProc = {fg=fullwine.zinfandel};
+  PreCondit = {fg=fullwine.zinfandel};
   Include = {fg=fullwine.malbec};
-  Define = {fg=fullwine.teroldeguo};
+  Define = {fg=fullwine.zinfandel};
   Conditional = {fg=fullwine.malbec,bg=fullwine.none,style=fullwine.none};
   Repeat = {fg=fullwine.malbec,bg=fullwine.none,style=fullwine.none};
   Keyword = {fg=fullwine.malbec,bg=fullwine.none,style=fullwine.none};
@@ -111,12 +114,12 @@ local syntax = {
   Title = {fg=fullwine.riesling,bg=fullwine.none,style='bold'};
   Special = {fg=fullwine.white_port,bg=fullwine.none};
   SpecialChar = {fg=fullwine.verdicchio};
-  Type = {fg=fullwine.pinot_noir};
+  Type = {fg=fullwine.grenache};
   Function = {fg=fullwine.white_port,bg=fullwine.none,style='bold'};
   String = {fg=fullwine.verdicchio};
   Character = {fg=fullwine.verdicchio};
   Constant = {fg=fullwine.teroldeguo};
-  Macro = {fg=fullwine.teroldeguo};
+  Macro = {fg=fullwine.zinfandel};
   Identifier = {fg=fullwine.riesling};
   Comment = {fg=fullwine.white_graves,style='italic'};
   SpecialComment = {fg=fullwine.white_graves,style='italic'};
@@ -159,7 +162,8 @@ local treesitter = {
   TSEmphasis = { fg = fullwine.pinot_noir, style = 'bold' },
   TSError = syntax.ErrorMsg,
   TSException = syntax.Exception,
-  TSField = { fg = fullwine.riesling },
+  TSField = { fg = fullwine.discus },
+  TSProperty = { fg = fullwine.discus },
   TSFloat = syntax.Float,
   TSFuncBuiltin = syntax.Function,
   TSFuncMacro = syntax.Function,
@@ -174,7 +178,6 @@ local treesitter = {
   TSNumber = syntax.Number,
   TSOperator = syntax.Operator,
   TSParameterReference= { fg = fullwine.verdicchio },
-  TSProperty = { fg = fullwine.riesling },
   TSPunctBracket = syntax.Delimiter,
   TSPunctDelimiter = syntax.Delimiter,
   TSPunctSpecial = { fg = fullwine.sauternes },
@@ -194,7 +197,7 @@ local treesitter = {
   TSURI = { fg = fullwine.sherry, bg = fullwine.none, style = 'underline' },
   TSUnderline = syntax.Underlined,
   TSVariable = { fg = fullwine.muscadet },
-  TSVariableBuiltin = { fg = fullwine.nebiolo },
+  TSVariableBuiltin = { fg = fullwine.mourvedre },
   TSWarning = syntax.WarningMsg,
   TSComment = syntax.Comment,
   TSNote = syntax.ModeMsg,
