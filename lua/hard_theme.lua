@@ -60,7 +60,7 @@ local syntax = {
   DiffAdd = {fg=fullwine.nebiolo,bg=fullwine.riesling};
   DiffChange = {fg=fullwine.muscadet,bg=fullwine.old_reds};
   DiffDelete = {fg=fullwine.muscadet,bg=fullwine.malbec};
-  DiffText = {fg=fullwine.sherry,bg=fullwine.old_reds};
+  DiffText = {fg=fullwine.sherry,bg=fullwine.nebiolo};
   Directory = {fg=fullwine.albarino,bg=fullwine.none,style='bold'};
   ErrorMsg = {fg=fullwine.malbec,bg=fullwine.none,style='bold'};
   WarningMsg = {fg=fullwine.riesling,bg=fullwine.none,style='bold'};
