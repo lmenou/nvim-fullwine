@@ -1,6 +1,6 @@
 # nvim-fullwine
-Neovim colorscheme in lua inspired from wine colors and supported by
-tree-sitter.
+Neovim colorscheme in lua inspired from the colors of Bacchus, autumn and wine.  
+The colorscheme is supported by tree-sitter.
 
 ![fullwine](https://github.com/lmenou/nvim-fullwine/blob/master/examples/example_fullwine.png)
 
