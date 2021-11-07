@@ -1,5 +1,38 @@
 local M = {}
 
+M.colors = {
+  -- background
+  -- aged_reds = '#372f2f',
+  old_reds = '#644141',
+  passed_reds = '#5a3939',
+  wrong_reds = '#7e4138',
+  light_reds = '#543636',
+  discus = '#cec7d4',
+
+  -- foreground
+  muscadet = '#fcffca',
+  sherry = '#f3d171',
+  white_port ='#ffa500',
+  tempranillo = '#8c2828',
+  verdicchio = '#cfe94e',
+  riesling = '#e4db4a',
+  malbec = '#f2002c',
+  zinfandel = '#ffa9e2',
+  syrah_rose = '#b84b4a',
+  albarino = '#e3e07f',
+  teroldeguo = '#e378a2 ',
+  pinot_noir = '#e54772 ',
+  mourvedre = '#ff9494',
+  grenache = '#79a48f',
+  sauternes = '#ffee19',
+  nebiolo = '#a92900',
+
+  -- minerals
+  graves = '#737373',
+  white_graves = '#8e8e8e',
+  black_graves = '#323232',
+}
+
 function M.setter(fullwine)
   local syntax = {
     -- Layout
@@ -19,11 +52,11 @@ function M.setter(fullwine)
     iCursor = {fg=fullwine.none,bg=fullwine.none,style='reverse'};
     lCursor = {fg=fullwine.none,bg=fullwine.none,style='reverse'};
     CursorIM = {fg=fullwine.none,bg=fullwine.none,style='reverse'};
-    CursorColumn = {fg=fullwine.none,bg=fullwine.old_reds};
-    CursorLine = {fg=fullwine.none,bg=fullwine.old_reds};
+    CursorColumn = {fg=fullwine.none,bg=fullwine.light_reds};
+    CursorLine = {fg=fullwine.none,bg=fullwine.light_reds};
     LineNr = {fg=fullwine.graves};
     qfLineNr = {fg=fullwine.graves};
-    CursorLineNr = {fg=fullwine.sherry,bg=fullwine.old_reds};
+    CursorLineNr = {fg=fullwine.sherry,bg=fullwine.light_reds};
     DiffAdd = {fg=fullwine.nebiolo,bg=fullwine.riesling};
     DiffChange = {fg=fullwine.muscadet,bg=fullwine.old_reds};
     DiffDelete = {fg=fullwine.muscadet,bg=fullwine.malbec};
@@ -127,7 +160,6 @@ function M.setter(fullwine)
     TSConstant = syntax.Constant,
     TSConstructor = syntax.Function,
     TSEmphasis = { fg = fullwine.pinot_noir, style = 'bold' },
-    TSError = syntax.ErrorMsg,
     TSException = syntax.Exception,
     TSField = { fg = fullwine.discus },
     TSProperty = { fg = fullwine.discus },
@@ -157,8 +189,7 @@ function M.setter(fullwine)
     TSTag = syntax.Tag,
     TSTagDelimiter = syntax.Tag,
     TSText = { fg = fullwine.muscadet },
-    TSTextReference = { fg = fullwine.tempranillo },
-    TSTitle = syntax.Title,
+    TSTextReference = { fg = fullwine.discus },
     TSType = syntax.Type,
     TSTypeBuiltin = syntax.Type,
     TSURI = { fg = fullwine.sherry, bg = fullwine.none, style = 'underline' },
@@ -170,24 +201,24 @@ function M.setter(fullwine)
     TSNote = syntax.ModeMsg,
     TSDanger = syntax.ErrorMsg,
     TSTitle = syntax.Title,
+    -- TSError = syntax.ErrorMsg,
   }
 
   if vim.g.fullwine_italicize == 0 then
-    theme.syntax.PmenuSel = {fg=fullwine.nebiolo,bg=fullwine.white_port};
-    theme.syntax.WildMenu = {fg=fullwine.muscadet,bg=fullwine.nebiolo};
-    theme.syntax.StatusLine = {fg=fullwine.muscadet,bg=fullwine.passed_reds};
-    theme.syntax.Comment = {fg=fullwine.white_graves};
-    theme.syntax.SpecialComment = {fg=fullwine.white_graves};
-    theme.treesitter.TSComment = {fg=fullwine.white_graves}
+    syntax.PmenuSel = {fg=fullwine.nebiolo,bg=fullwine.white_port};
+    syntax.WildMenu = {fg=fullwine.muscadet,bg=fullwine.nebiolo};
+    syntax.StatusLine = {fg=fullwine.muscadet,bg=fullwine.passed_reds};
+    syntax.Comment = {fg=fullwine.white_graves};
+    syntax.SpecialComment = {fg=fullwine.white_graves};
+    treesitter.TSComment = {fg=fullwine.white_graves}
   end
 
-  rtn = {
-    syntax = syntax, 
+  return {
+    syntax = syntax,
     lspdiagnostic = lspdiagnostic,
     treesitter = treesitter,
     }
 
-  return rtn
 end
 
 return M
