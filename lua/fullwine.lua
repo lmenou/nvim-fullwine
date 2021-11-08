@@ -1,15 +1,7 @@
 local fullwine = require('theme').fullwine
 local theme = require('theme').theme
 
-function highlight(group, color)
-    local style = color.style and 'gui=' .. color.style or 'gui=NONE'
-    local fg = color.fg and 'guifg=' .. color.fg or 'guifg=NONE'
-    local bg = color.bg and 'guibg=' .. color.bg or 'guibg=NONE'
-    local sp = color.sp and 'guisp=' .. color.sp or ''
-
-    local hl = "highlight " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp
-    vim.cmd(hl)
-end
+local highlight = require('theme_setter').highlighter
 
 return {
   colorscheme = function ()
@@ -43,8 +35,14 @@ return {
       highlight(group, colors)
     end
 
-    if vim.g.fullwine_plugin_hi_group == nil then
+    if vim.g.fullwine_treesitter_support == 1 or vim.g.fullwine_treesitter_support == nil then
       for group, colors in pairs(theme.treesitter) do
+        highlight(group, colors)
+      end
+    end
+
+    if vim.g.fullwine_plugin_hi_group == 1 then
+      for group, colors in pairs(theme.plugin) do
         highlight(group, colors)
       end
     end

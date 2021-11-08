@@ -1,5 +1,15 @@
 local M = {}
 
+M.highlighter = function (group, color)
+  local style = color.style and 'gui=' .. color.style or 'gui=NONE'
+  local fg = color.fg and 'guifg=' .. color.fg or 'guifg=NONE'
+  local bg = color.bg and 'guibg=' .. color.bg or 'guibg=NONE'
+  local sp = color.sp and 'guisp=' .. color.sp or ''
+
+  local hl = "highlight " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp
+  vim.cmd(hl)
+end
+
 M.colors = {
   -- background
   -- aged_reds = '#372f2f',
@@ -130,6 +140,25 @@ function M.setter(fullwine)
   }
 
   local lspdiagnostic = {
+    -- Diagnostic
+    DiagnosticError = syntax.ErrorMsg,
+    DiagnosticFloatingError = syntax.ErrorMsg,
+    DiagnosticSignError = syntax.ErrorMsg,
+    DiagnosticWarn = syntax.WarningMsg,
+    DiagnosticFloatingWarn = syntax.WarningMsg,
+    DiagnosticSignWarn = syntax.WarningMsg,
+    DiagnosticHint = syntax.ModeMsg,
+    DiagnosticFloatingHint = syntax.ModeMsg,
+    DiagnosticSignHint = syntax.ModeMsg,
+    DiagnosticInfo = syntax.ModeMsg,
+    DiagnosticFloatingInfo = syntax.ModeMsg,
+    DiagnosticSignInfo = syntax.ModeMsg,
+    DiagnosticUnderlineError = {fg = fullwine.malbec, style = 'undercurl'},
+    DiagnosticUnderlineHint  = {fg = fullwine.verdicchio, style = 'undercurl'},
+    DiagnosticUnderlineInfo  = {fg = fullwine.verdicchio, style = 'undercurl'},
+    DiagnosticUnderlineWarn = {fg = fullwine.riesling, style = 'undercurl'},
+
+    -- LspDiagnostic
     LspDiagnosticsDefaultError = syntax.ErrorMsg,
     LspDiagnosticsFloatingError = syntax.ErrorMsg,
     LspDiagnosticsSignError = syntax.ErrorMsg,
@@ -204,6 +233,65 @@ function M.setter(fullwine)
     -- TSError = syntax.ErrorMsg,
   }
 
+  local plugin = {
+    -- ALE
+    ALEErrorSign = lspdiagnostic.DiagnosticError,
+    ALEWarningSign = lspdiagnostic.DiagnosticHint,
+
+    -- COC
+    CocErrorHighlight = lspdiagnostic.DiagnosticUnderlineError,
+    CocErrorSign = lspdiagnostic.DiagnosticSignError,
+    CocHintHighlight  = lspdiagnostic.DiagnosticUnderlineHint  ,
+    CocHintSign  = lspdiagnostic.DiagnosticSignHint,
+    CocInfoHighlight  = lspdiagnostic.DiagnosticUnderlineInfo,
+    CocInfoSign  = lspdiagnostic.DiagnosticSignInfo,
+    CocWarningHighlight = lspdiagnostic.DiagnosticUnderlineWarn,
+    CocWarningSign = lspdiagnostic.DiagnosticSignWarn,
+
+    -- Easy-Motion
+    EasyMotion = syntax.IncSearch,
+    JumpMotion = syntax.Search,
+
+    -- Git-Futter/Git-Signs/Vim-Signify
+    GitGutterAdd    = {fg = fullwine.nebiolo},
+    GitGutterChange = {fg = fullwine.muscadet},
+    GitGutterDelete = {fg = fullwine.muscadet},
+    GitGutterChangeDelete = {fg = fullwine.sherry},
+
+    SignifySignAdd    = {fg = fullwine.nebiolo},
+    SignifySignChange = {fg = fullwine.muscadet},
+    SignifySignDelete = {fg = fullwine.muscadet},
+    SignifySignChangeDelete = {fg = fullwine.sherry},
+
+    GitSignsAdd = { fg = fullwine.nebiolo },
+    GitSignsChange = {fg = fullwine.muscadet},
+    GitSignsDelete = {fg = fullwine.muscadet},
+
+    -- Vim-Indent-Guides
+    IndentGuidesOdd  = { bg=fullwine.graves },
+    IndentGuidesEven = { bg=fullwine.graves },
+
+    -- NERDTree/Fern
+    NERDTreeCWD = syntax.Label,
+    NERDTreeUp  = syntax.Operator,
+    NERDTreeDir = syntax.Directory,
+    NERDTreeDirSlash = syntax.Delimiter,
+    NERDTreeOpenable = syntax.Directory,
+    NERDTreeClosable = syntax.Directory,
+    NERDTreeExecFile = syntax.Function,
+    NERDTreeLinkTarget = syntax.Tag,
+
+    FernBranchText = syntax.Directory,
+
+    -- LSPSaga
+    DefinitionCount = syntax.Number,
+    DefinitionIcon  = syntax.Special,
+    ReferencesCount = syntax.Number,
+    ReferencesIcon  = treesitter.TSTextReference,
+    TargetFileName  = syntax.Directory,
+    TargetWord = syntax.Title,
+    }
+
   if vim.g.fullwine_italicize == 0 then
     syntax.PmenuSel = {fg=fullwine.nebiolo,bg=fullwine.white_port};
     syntax.WildMenu = {fg=fullwine.muscadet,bg=fullwine.nebiolo};
@@ -217,6 +305,7 @@ function M.setter(fullwine)
     syntax = syntax,
     lspdiagnostic = lspdiagnostic,
     treesitter = treesitter,
+    plugin = plugin,
     }
 
 end
