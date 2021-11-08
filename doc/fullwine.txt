@@ -34,30 +34,47 @@ try them, replace `fullwine` by respectively `fullwine_soft` and
 
 By default, some pieces of the colorscheme are italicized, namely, the
 |statusline|, the |wilmenu|, the completion selection in popup menu and the
-comments in the code. Set to 0 to suppress italics.
+comments in the code. Set the following value to 0 to suppress italics.
 
 - vimL (|init.vim|)
 >
-    let g:fullwine_italicize = 1
+	let g:fullwine_italicize = 1
 <
 - lua (|init.lua|)
 >
-    vim.g.fullwine_italicize = 1
+	vim.g.fullwine_italicize = 1
 <
 *g:fullwine_plugin_hi_group*
 *vim.g.fullwine_plugin_hi_group*
 
-The colorscheme is supported by tree-sitter, set this value to 0 to supress
-tree-sitter support.
+The colorscheme is supported by tree-sitter, set the following value to 0 to
+supress tree-sitter support.
 
 - vimL (|init.vim|)
 >
-    let g:fullwine_plugin_hi_group = 1
+	let g:fullwine_treesitter_support = 1
 <
 - lua (|init.lua|)
 >
-    vim.g.fullwine_plugin_hi_group = 1
+	vim.g.fullwine_treesitter_support = 1
 <
+
+*g:fullwine_plugin_hi_group*
+*vim.fullwine_plugin_hi_group*
+
+The colorscheme supports some various and famous plugins, this is not enabled
+by default, you should turn on the supports explicitely by setting this value
+to 1.
+
+- vimL (|init.vim|)
+>
+	let g:fullwine_plugin_hi_group = 1
+<
+- lua (|init.lua|)
+>
+	vim.g.fullwine_plugin_hi_group
+<
+
 ============================================================================
 2. Contributing		*fullwine-contributing*
 
