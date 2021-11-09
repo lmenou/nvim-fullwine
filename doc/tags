@@ -4,8 +4,8 @@ fullwine-contributing	fullwine.txt	/*fullwine-contributing*
 fullwine.txt	fullwine.txt	/*fullwine.txt*
 g:fullwine_italicize	fullwine.txt	/*g:fullwine_italicize*
 g:fullwine_plugin_hi_group	fullwine.txt	/*g:fullwine_plugin_hi_group*
-g:fullwine_plugin_hi_group	fullwine.txt	/*g:fullwine_plugin_hi_group*
+g:fullwine_treesitter_support	fullwine.txt	/*g:fullwine_treesitter_support*
 nvim-fullwine	fullwine.txt	/*nvim-fullwine*
 vim.fullwine_plugin_hi_group	fullwine.txt	/*vim.fullwine_plugin_hi_group*
 vim.g.fullwine_italicize	fullwine.txt	/*vim.g.fullwine_italicize*
-vim.g.fullwine_plugin_hi_group	fullwine.txt	/*vim.g.fullwine_plugin_hi_group*
+vim.g.fullwine_treesitter_support	fullwine.txt	/*vim.g.fullwine_treesitter_support*

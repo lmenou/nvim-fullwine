@@ -44,8 +44,8 @@ comments in the code. Set the following value to 0 to suppress italics.
 >
 	vim.g.fullwine_italicize = 1
 <
-*g:fullwine_plugin_hi_group*
-*vim.g.fullwine_plugin_hi_group*
+*g:fullwine_treesitter_support*
+*vim.g.fullwine_treesitter_support*
 
 The colorscheme is supported by tree-sitter, set the following value to 0 to
 supress tree-sitter support.
@@ -72,7 +72,7 @@ to 1.
 <
 - lua (|init.lua|)
 >
-	vim.g.fullwine_plugin_hi_group
+	vim.g.fullwine_plugin_hi_group = 1
 <
 
 ============================================================================
