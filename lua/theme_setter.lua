@@ -1,15 +1,5 @@
 local M = {}
 
-M.highlighter = function (group, color)
-  local style = color.style and 'gui=' .. color.style or 'gui=NONE'
-  local fg = color.fg and 'guifg=' .. color.fg or 'guifg=NONE'
-  local bg = color.bg and 'guibg=' .. color.bg or 'guibg=NONE'
-  local sp = color.sp and 'guisp=' .. color.sp or ''
-
-  local hl = "highlight " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp
-  vim.cmd(hl)
-end
-
 M.colors = {
   -- background
   -- aged_reds = '#372f2f',
@@ -42,6 +32,35 @@ M.colors = {
   white_graves = '#8e8e8e',
   black_graves = '#323232',
 }
+
+M.highlighter = function (group, color)
+  local style = color.style and 'gui=' .. color.style or 'gui=NONE'
+  local fg = color.fg and 'guifg=' .. color.fg or 'guifg=NONE'
+  local bg = color.bg and 'guibg=' .. color.bg or 'guibg=NONE'
+  local sp = color.sp and 'guisp=' .. color.sp or ''
+
+  local hl = "highlight " .. group .. " " .. style .. " " .. fg .. " " .. bg .. " " .. sp
+  vim.cmd(hl)
+end
+
+M.terminal_highlighter = function(fullwine)
+  vim.g.terminal_color_0 = fullwine.black_graves
+  vim.g.terminal_color_1 = fullwine.malbec
+  vim.g.terminal_color_2 = fullwine.verdicchio
+  vim.g.terminal_color_3 = fullwine.riesling
+  vim.g.terminal_color_4 = fullwine.white_port
+  vim.g.terminal_color_5 = fullwine.teroldeguo
+  vim.g.terminal_color_6 = fullwine.nebiolo
+  vim.g.terminal_color_7 = fullwine.muscadet
+  vim.g.terminal_color_8 = fullwine.white_graves
+  vim.g.terminal_color_9 = fullwine.malbec
+  vim.g.terminal_color_10 = fullwine.albarino
+  vim.g.terminal_color_11 = fullwine.sauternes
+  vim.g.terminal_color_12 = fullwine.sherry
+  vim.g.terminal_color_13 = fullwine.zinfandel
+  vim.g.terminal_color_14 = fullwine.syrah_rose
+  vim.g.terminal_color_15 = fullwine.muscadet
+end
 
 function M.setter(fullwine)
   local syntax = {
@@ -130,7 +149,7 @@ function M.setter(fullwine)
     Character = {fg=fullwine.verdicchio};
     Constant = {fg=fullwine.teroldeguo};
     Macro = {fg=fullwine.zinfandel};
-    Identifier = {fg=fullwine.riesling};
+    Identifier = {fg=fullwine.discus};
     Comment = {fg=fullwine.white_graves,style='italic'};
     SpecialComment = {fg=fullwine.white_graves,style='italic'};
     Todo = {fg=fullwine.muscadet,bg=fullwine.none,style='bold'};
