@@ -98,13 +98,13 @@ function M.setter(fullwine)
     NonText = {fg=fullwine.white_graves};
     Whitespace = {fg=fullwine.graves};
     SpecialKey = {fg=fullwine.graves};
-    Pmenu = {fg=fullwine.muscadet,bg=fullwine.nebiolo};
+    Pmenu = {fg=fullwine.muscadet,bg=fullwine.wrong_reds};
     PmenuSel = {fg=fullwine.nebiolo,bg=fullwine.white_port,style='italic'};
-    PmenuSbar = {fg=fullwine.none,bg=fullwine.nebiolo};
-    PmenuThumb = {fg=fullwine.none,bg=fullwine.muscadet};
+    PmenuSbar = {fg=fullwine.none,bg=fullwine.wrong_reds};
+    PmenuThumb = {fg=fullwine.none,bg=fullwine.syrah_rose};
     WildMenu = {fg=fullwine.muscadet,bg=fullwine.nebiolo,style='italic'};
     Question = {fg=fullwine.verdicchio};
-    NormalFloat = {fg=fullwine.muscadet,bg=fullwine.passed_reds};
+    NormalFloat = {fg=fullwine.muscadet,bg=fullwine.wrong_reds};
     Tabline = {fg=fullwine.white_graves,bg=fullwine.old_reds};
     TabLineFill = {bg=fullwine.old_reds};
     TabLineSel = {fg=fullwine.white_port,bg=fullwine.old_reds};
