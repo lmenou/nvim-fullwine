@@ -36,32 +36,54 @@ commands specified above. Simple, isn't it ?
 
 ## Configuration
 
-### Plugin support
-The colorscheme support native-LSP and tree-sitter by default. Let us hope
-more is to follow.  
+### Tree-Sitter support
+The colorscheme support native-LSP and tree-sitter by default.
 
 If you did not installed tree-sitter, simply set the global value
-`fullwine_plugin_hi_group` to 0.  
+`fullwine_treesitter_support` to 0.  
 - vimL (in your init.vim)
 ```vim
-let g:fullwine_plugin_hi_group = 0
+let g:fullwine_treesitter_support = 0
 ```
 or  
 
 - lua (in your init.lua)
 ```lua
-vim.g.fullwine_plugin_hi_group = 0
+vim.g.fullwine_treesitter_support = 0
 ```
+
+### Plugin support
+
+The colorscheme support various famous plugins, namely:
+- [ALE](https://github.com/dense-analysis/ale)/[CoC](https://github.com/neoclide/coc.nvim)
+- [LspSaga](https://github.com/glepnir/lspsaga.nvim)
+- [Easy-Motion](https://github.com/easymotion/vim-easymotion)
+- [Git-Gutter](https://github.com/emacsorphanage/git-gutter)/[Git-Signs](https://github.com/lewis6991/gitsigns.nvim)/[Vim-Signify](https://github.com/mhinz/vim-signify)
+- [NERDTree](https://github.com/preservim/nerdtree)/[Fern](https://github.com/lambdalisue/fern.vim)/[NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
+- [Vim-Indent-Guides](https://github.com/nathanaelkane/vim-indent-guides)
+
+If you wish the highlighting for those plugins, you should turn this on. Note
+that this might lead to bug when switching colorscheme.
+
+To turn the plugin support on, simply set the global variable
+`fullwine_plugin_hi_group` to 1 (as specified above).
 
 ### Italics
 Some things are in italic by default, if you do not like that, simply set the
 global value `fullwine_italicize` to 0 (as above).
 
 ## Contributing
- I am totally open to critics ! Raise an issue if you are not satisfied with
- something or even submit a PR, I will be pleased to discuss about both.
+I am totally open to critics ! Raise an issue if you are not satisfied with
+something or even submit a PR, I will be pleased to discuss about both.
 
- Please, feel free to report any bugs also.
+Please, feel free to report any bugs also.
+
+If you look at my dotfiles, you will see that I am not a user of most of the
+supported plugins, hence, if you are dissatisfied with some highlights (and
+this might be totally legitimate), feel free to propose a correction too !
+
+Additionally, if a plugin is not supported, well, you might guess what to do
+from the above.
 
 ## License 
 This plugin is licensed under Apache 2.0 (same as Neovim). See the
