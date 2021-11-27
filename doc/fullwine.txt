@@ -1,4 +1,4 @@
-*fullwine.txt*	 Neovim colorscheme inspired from wine colors 
+*fullwine.txt*	 Neovim colorscheme inspired from the colors of Bacchus
 
 Author: lmenou
 License: Apache 2.0 (See LICENSE file for details)
@@ -6,7 +6,7 @@ License: Apache 2.0 (See LICENSE file for details)
 *fullwine* - *nvim-fullwine*
 
 This is a colorscheme entirely written in lua, inspired from the colors of
-wine.
+Bacchus, autumn and wine.
 
 To use the colorscheme on a day to day basis, it is very simple, at the end of
 your |init.vim|, write:
@@ -63,8 +63,9 @@ supress tree-sitter support.
 *vim.fullwine_plugin_hi_group*
 
 The colorscheme supports some various and famous plugins, this is not enabled
-by default, you should turn on the supports explicitely by setting this value
-to 1.
+by default, you should turn on the supports explicitely by setting the latter
+value to 1. Please, note that this might lead to problems when switching
+colorschemes.
 
 - vimL (|init.vim|)
 >
