@@ -63,7 +63,7 @@ The colorscheme support various famous plugins, namely:
 - [Vim-Indent-Guides](https://github.com/nathanaelkane/vim-indent-guides)
 
 If you wish the highlighting for those plugins, you should turn this on. Note
-that this might lead to bug when switching colorscheme.
+that this might lead to bug when switching away from the colorscheme.
 
 To turn the plugin support on, simply set the global variable
 `fullwine_plugin_hi_group` to 1 (as specified above).
