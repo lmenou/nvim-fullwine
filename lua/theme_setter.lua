@@ -1,3 +1,7 @@
+-- Theme: fullwine
+-- Author: lmenou
+-- LICENSE: Apache 2.0
+
 local M = {}
 
 M.colors = {
@@ -283,14 +287,20 @@ function M.setter(fullwine)
     SignifySignChangeDelete = {fg = fullwine.sherry},
 
     GitSignsAdd = { fg = fullwine.nebiolo },
-    GitSignsChange = {fg = fullwine.muscadet},
-    GitSignsDelete = {fg = fullwine.muscadet},
+    GitSignsAddNr = { fg = fullwine.nebiolo },
+    GitSignsAddLn = { fg = fullwine.nebiolo },
+    GitSignsChange = { fg = fullwine.muscadet },
+    GitSignsChangeNr = { fg = fullwine.muscadet },
+    GitSignsChangeLn = { fg = fullwine.muscadet },
+    GitSignsDelete = { fg = fullwine.muscadet },
+    GitSignsDeleteNr = { fg = fullwine.muscadet },
+    GitSignsDeleteLn = { fg = fullwine.muscadet },
 
     -- Vim-Indent-Guides
     IndentGuidesOdd  = { bg=fullwine.graves },
     IndentGuidesEven = { bg=fullwine.graves },
 
-    -- NERDTree/Fern
+    -- NERDTree/Fern/NvimTree
     NERDTreeCWD = syntax.Label,
     NERDTreeUp  = syntax.Operator,
     NERDTreeDir = syntax.Directory,
@@ -301,6 +311,17 @@ function M.setter(fullwine)
     NERDTreeLinkTarget = syntax.Tag,
 
     FernBranchText = syntax.Directory,
+
+    NvimTreeRootFolder = syntax.Directory,
+    NvimTreeGitDirty = { fg = fullwine.muscadet },
+    NvimTreeGitNew = { fg = fullwine.nebiolo },
+    NvimTreeImageFile = { fg = fullwine.graves },
+    NvimTreeExecFile = syntax.Function,
+    NvimTreeSpecialFile = syntax.Tag,
+    NvimTreeFolderName= syntax.Directory,
+    NvimTreeEmptyFolderName= { fg = fullwine.none },
+    NvimTreeFolderIcon= { fg = fullwine.sherry },
+    NvimTreeIndentMarker = { fg  = fullwine.none },
 
     -- LSPSaga
     DefinitionCount = syntax.Number,
@@ -330,3 +351,5 @@ function M.setter(fullwine)
 end
 
 return M
+
+-- lua: et tw=79 ts=2 sts=2 sw=2
