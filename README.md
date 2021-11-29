@@ -55,9 +55,8 @@ vim.g.fullwine_treesitter_support = 0
 ### Plugin support
 
 The colorscheme support various famous plugins, namely:
-- Linters
+- LSP / Linters
 	- [ALE](https://github.com/dense-analysis/ale)
-- LSP/Linters
 	- [CoC](https://github.com/neoclide/coc.nvim)
 	- [LspSaga](https://github.com/glepnir/lspsaga.nvim)
 - Git Signs
@@ -74,7 +73,7 @@ The colorscheme support various famous plugins, namely:
 	- [Easy-Motion](https://github.com/easymotion/vim-easymotion)
 
 If you wish the highlighting for those plugins, you should turn this on. Note
-that this might lead to bug when switching away from the colorscheme.
+that this might lead to bugs when switching away from the colorscheme.
 
 To turn the plugin support on, simply set the global variable
 `fullwine_plugin_hi_group` to 1 (as specified above).
