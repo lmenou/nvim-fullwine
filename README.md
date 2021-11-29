@@ -55,12 +55,23 @@ vim.g.fullwine_treesitter_support = 0
 ### Plugin support
 
 The colorscheme support various famous plugins, namely:
-- [ALE](https://github.com/dense-analysis/ale)/[CoC](https://github.com/neoclide/coc.nvim)
-- [LspSaga](https://github.com/glepnir/lspsaga.nvim)
-- [Easy-Motion](https://github.com/easymotion/vim-easymotion)
-- [Git-Gutter](https://github.com/emacsorphanage/git-gutter)/[Git-Signs](https://github.com/lewis6991/gitsigns.nvim)/[Vim-Signify](https://github.com/mhinz/vim-signify)
-- [NERDTree](https://github.com/preservim/nerdtree)/[Fern](https://github.com/lambdalisue/fern.vim)/[NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
-- [Vim-Indent-Guides](https://github.com/nathanaelkane/vim-indent-guides)
+- Linters
+	- [ALE](https://github.com/dense-analysis/ale)
+- LSP/Linters
+	- [CoC](https://github.com/neoclide/coc.nvim)
+	- [LspSaga](https://github.com/glepnir/lspsaga.nvim)
+- Git Signs
+	- [Git-Gutter](https://github.com/emacsorphanage/git-gutter)
+	- [Git-Signs](https://github.com/lewis6991/gitsigns.nvim)
+	- [Vim-Signify](https://github.com/mhinz/vim-signify)
+- File Explorer
+	- [NERDTree](https://github.com/preservim/nerdtree)
+	- [Fern](https://github.com/lambdalisue/fern.vim)
+	- [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
+- Indent
+	- [Vim-Indent-Guides](https://github.com/nathanaelkane/vim-indent-guides)
+- Motions
+	- [Easy-Motion](https://github.com/easymotion/vim-easymotion)
 
 If you wish the highlighting for those plugins, you should turn this on. Note
 that this might lead to bug when switching away from the colorscheme.
