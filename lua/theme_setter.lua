@@ -275,7 +275,7 @@ function M.setter(fullwine)
     EasyMotion = syntax.IncSearch,
     JumpMotion = syntax.Search,
 
-    -- Git-Futter/Git-Signs/Vim-Signify
+    -- Git-Futter / Git-Signs / Vim-Signify
     GitGutterAdd    = {fg = fullwine.nebiolo},
     GitGutterChange = {fg = fullwine.muscadet},
     GitGutterDelete = {fg = fullwine.muscadet},
@@ -298,9 +298,9 @@ function M.setter(fullwine)
 
     -- Vim-Indent-Guides
     IndentGuidesOdd  = { bg=fullwine.graves },
-    IndentGuidesEven = { bg=fullwine.graves },
+    IndentGuidesEven = { bg=fullwine.white_graves },
 
-    -- NERDTree/Fern/NvimTree
+    -- NERDTree / Fern / NvimTree
     NERDTreeCWD = syntax.Label,
     NERDTreeUp  = syntax.Operator,
     NERDTreeDir = syntax.Directory,
@@ -310,7 +310,11 @@ function M.setter(fullwine)
     NERDTreeExecFile = syntax.Function,
     NERDTreeLinkTarget = syntax.Tag,
 
-    FernBranchText = syntax.Directory,
+    FernSpinner = syntax.Label,
+    FernMarkedLine = syntax.Directory,
+    FernMarkedText = syntax.Tag,
+    FernWindowSelectIndicator = syntax.Operator,
+    FernWindowSelectStatusLine = syntax.Number,
 
     NvimTreeRootFolder = syntax.Directory,
     NvimTreeGitDirty = { fg = fullwine.muscadet },
