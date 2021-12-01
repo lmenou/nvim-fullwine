@@ -37,7 +37,7 @@ commands specified above. Simple, isn't it ?
 ## Configuration
 
 ### Tree-Sitter support
-The colorscheme support native-LSP and tree-sitter by default.
+The colorscheme support native-LSP and is supported by tree-sitter by default.
 
 If you did not installed tree-sitter, simply set the global value
 `fullwine_treesitter_support` to 0.  
@@ -63,11 +63,11 @@ The colorscheme support various famous plugins, namely:
 	- [Git-Gutter](https://github.com/emacsorphanage/git-gutter)
 	- [Git-Signs](https://github.com/lewis6991/gitsigns.nvim)
 	- [Vim-Signify](https://github.com/mhinz/vim-signify)
-- File Explorer
+- File Explorers
 	- [NERDTree](https://github.com/preservim/nerdtree)
 	- [Fern](https://github.com/lambdalisue/fern.vim)
 	- [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
-- Indent
+- Indents
 	- [Vim-Indent-Guides](https://github.com/nathanaelkane/vim-indent-guides)
 - Motions
 	- [Easy-Motion](https://github.com/easymotion/vim-easymotion)
