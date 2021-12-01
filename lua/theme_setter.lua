@@ -277,9 +277,13 @@ function M.setter(fullwine)
     CocWarningHighlight = lspdiagnostic.DiagnosticUnderlineWarn,
     CocWarningSign = lspdiagnostic.DiagnosticSignWarn,
 
-    -- Easy-Motion
+    -- Easy-Motion / Sneak-Ease
     EasyMotion = syntax.IncSearch,
     JumpMotion = syntax.Search,
+
+    Sneak = syntax.IncSearch,
+    SneakScope = syntax.CursorColumn,
+    SneakLabel = syntax.Search,
 
     -- Git-Futter / Git-Signs / Vim-Signify
     GitGutterAdd    = {fg = fullwine.nebiolo},
