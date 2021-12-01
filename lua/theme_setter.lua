@@ -77,7 +77,7 @@ function M.setter(fullwine)
     -- Layout
     Normal = {fg=fullwine.muscadet,bg=fullwine.aged_reds};
     Terminal = {fg = fullwine.muscadet,bg=fullwine.aged_reds};
-    SignColumn = {fg=fullwine.muscadet,bg=fullwine.old_reds};
+    SignColumn = {fg=fullwine.none,bg=fullwine.none};
     FoldColumn = {fg=fullwine.graves,bg=fullwine.aged_reds};
     VertSplit = {fg=fullwine.graves,bg=fullwine.aged_reds};
     Folded = {fg=fullwine.white_graves,bg=fullwine.aged_reds};
@@ -282,29 +282,29 @@ function M.setter(fullwine)
     JumpMotion = syntax.Search,
 
     Sneak = syntax.IncSearch,
-    SneakScope = syntax.CursorColumn,
-    SneakLabel = syntax.Search,
+    SneakScope = syntax.DiffChange,
+    SneakLabel = syntax.IncSearch,
 
     -- Git-Futter / Git-Signs / Vim-Signify
-    GitGutterAdd    = {fg = fullwine.nebiolo},
-    GitGutterChange = {fg = fullwine.muscadet},
-    GitGutterDelete = {fg = fullwine.muscadet},
+    GitGutterAdd = {fg = fullwine.verdicchio},
+    GitGutterChange = {fg = fullwine.white_port},
+    GitGutterDelete = {fg = fullwine.malbec},
     GitGutterChangeDelete = {fg = fullwine.sherry},
 
-    SignifySignAdd    = {fg = fullwine.nebiolo},
-    SignifySignChange = {fg = fullwine.muscadet},
-    SignifySignDelete = {fg = fullwine.muscadet},
+    SignifySignAdd = {fg = fullwine.verdicchio},
+    SignifySignChange = {fg = fullwine.white_port},
+    SignifySignDelete = {fg = fullwine.malbec},
     SignifySignChangeDelete = {fg = fullwine.sherry},
 
-    GitSignsAdd = { fg = fullwine.nebiolo },
-    GitSignsAddNr = { fg = fullwine.nebiolo },
-    GitSignsAddLn = { fg = fullwine.nebiolo },
-    GitSignsChange = { fg = fullwine.muscadet },
-    GitSignsChangeNr = { fg = fullwine.muscadet },
-    GitSignsChangeLn = { fg = fullwine.muscadet },
-    GitSignsDelete = { fg = fullwine.muscadet },
-    GitSignsDeleteNr = { fg = fullwine.muscadet },
-    GitSignsDeleteLn = { fg = fullwine.muscadet },
+    GitSignsAdd = { fg = fullwine.verdicchio },
+    GitSignsAddNr = { fg = fullwine.verdicchio },
+    GitSignsAddLn = { fg = fullwine.verdicchio },
+    GitSignsChange = { fg = fullwine.white_port },
+    GitSignsChangeNr = { fg = fullwine.white_port },
+    GitSignsChangeLn = { fg = fullwine.white_port },
+    GitSignsDelete = { fg = fullwine.malbec },
+    GitSignsDeleteNr = { fg = fullwine.malbec },
+    GitSignsDeleteLn = { fg = fullwine.malbec },
 
     -- Vim-Indent-Guides
     IndentGuidesOdd  = { bg=fullwine.graves },
