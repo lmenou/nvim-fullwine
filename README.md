@@ -71,6 +71,7 @@ The colorscheme support various famous plugins, namely:
 	- [Vim-Indent-Guides](https://github.com/nathanaelkane/vim-indent-guides)
 - Motions
 	- [Easy-Motion](https://github.com/easymotion/vim-easymotion)
+	- [Vim-Sneak](https://github.com/justinmk/vim-sneak)
 
 If you wish the highlighting for those plugins, you should turn this on. Note
 that this might lead to bugs when switching away from the colorscheme.
