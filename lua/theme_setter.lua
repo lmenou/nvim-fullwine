@@ -93,7 +93,9 @@ function M.setter(fullwine)
     CursorIM = {fg=fullwine.none,bg=fullwine.none,style='reverse'};
     CursorColumn = {fg=fullwine.none,bg=fullwine.light_reds};
     CursorLine = {fg=fullwine.none,bg=fullwine.light_reds};
-    LineNr = {fg=fullwine.graves};
+    LineNr = {fg=fullwine.sherry};
+    LineNrAbove = {fg=fullwine.graves};
+    LineNrBelow = {fg=fullwine.graves};
     qfLineNr = {fg=fullwine.graves};
     CursorLineNr = {fg=fullwine.sherry,bg=fullwine.light_reds};
     DiffAdd = {fg=fullwine.nebiolo,bg=fullwine.riesling};
