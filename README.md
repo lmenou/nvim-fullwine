@@ -79,11 +79,11 @@ that this might lead to bugs when switching away from the colorscheme.
 To turn the plugin support on, simply set the global variable
 `fullwine_plugin_hi_group` to 1 (as specified above).
 
-### Italics
+### Italics :writing_hand:
 Some things are in italic by default, if you do not like that, simply set the
 global value `fullwine_italicize` to 0 (as above).
 
-## Contributing
+## Contributing :thought_balloon:
 I am totally open to critics ! Raise an issue if you are not satisfied with
 something or even submit a PR, I will be pleased to discuss about both.
 
