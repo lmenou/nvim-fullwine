@@ -1,15 +1,15 @@
-# nvim-fullwine
+# nvim-fullwine :grapes:
 Neovim colorscheme in lua inspired from the colors of Bacchus, autumn and wine.  
 The colorscheme is supported by tree-sitter.
 
 ![fullwine](examples/example_fullwine.png)
 
-## Requirements
+## Requirements :lock_with_ink_pen:
 - [Neovim 0.5](https://github.com/neovim/neovim)  
 - If using the terminal as the UI, the latter should support gui colors, i.e `set
   termguicolors` is on by default.
 
-## Installation 
+## Installation :incoming_envelope:
 With your favourite plugin manager, you can have a look at
 [packer.nvim](https://github.com/wbthomason/packer.nvim) or [vim
 plug](https://github.com/junegunn/vim-plug) or even use the native solution
@@ -34,9 +34,9 @@ There exists a soft and a hard version of the colorscheme. To use or try them,
 replace `fullwine` by respectively `fullwine_soft` and `fullwine_hard` in the
 commands specified above. Simple, isn't it ?
 
-## Configuration
+## Configuration :gear:
 
-### Tree-Sitter support
+### Tree-Sitter support :leaves:
 The colorscheme support native-LSP and is supported by tree-sitter by default.
 
 If you did not installed tree-sitter, simply set the global value
@@ -52,7 +52,7 @@ or
 vim.g.fullwine_treesitter_support = 0
 ```
 
-### Plugin support
+### Plugin support :zap:
 
 The colorscheme support various famous plugins, namely:
 - LSP / Linters
@@ -96,7 +96,7 @@ this might be totally legitimate), feel free to propose a correction too !
 Additionally, if a plugin is not supported, well, you might guess what to do
 from the above.
 
-## License 
+## License :bookmark:
 This plugin is licensed under Apache 2.0 (same as Neovim). See the
 [LICENSE](https://github.com/lmenou/nvim-fullwine/blob/master/LICENSE) file
 for more information.
