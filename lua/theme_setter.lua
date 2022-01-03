@@ -150,7 +150,7 @@ function M.setter(fullwine)
     StorageClass = {fg=fullwine.pinot_noir};
     Tag = {fg=fullwine.verdicchio};
     Label = {fg=fullwine.zinfandel};
-    Structure = {fg=fullwine.pinot_noir};
+    Structure = {fg=fullwine.white_port, style='bold'};
     Operator = {fg=fullwine.sauternes};
     Title = {fg=fullwine.riesling,bg=fullwine.none,style='bold'};
     Special = {fg=fullwine.white_port,bg=fullwine.none};
@@ -252,7 +252,7 @@ function M.setter(fullwine)
     TSTextReference = { fg = fullwine.discus },
     TSType = syntax.Type,
     TSTypeBuiltin = syntax.Type,
-    TSURI = { fg = fullwine.sherry, bg = fullwine.none, style = 'underline' },
+    TSURI = { fg = fullwine.teroldeguo, bg = fullwine.none, style = 'underline' },
     TSUnderline = syntax.Underlined,
     TSVariable = { fg = fullwine.muscadet },
     TSVariableBuiltin = { fg = fullwine.mourvedre },
