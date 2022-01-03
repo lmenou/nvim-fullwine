@@ -1,4 +1,4 @@
-# nvim-fullwine :grapes:
+# nvim-fullwine :grapes: :fallen_leaf:
 Neovim colorscheme in lua inspired from the colors of Bacchus, autumn and wine.  
 The colorscheme is supported by tree-sitter.
 
