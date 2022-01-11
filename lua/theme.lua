@@ -2,12 +2,12 @@
 -- Author: lmenou
 -- LICENSE: Apache 2.0
 
-local setter = require("theme_setter")
+local setter = require "theme_setter"
 
 local fullwine = setter.colors
 
 -- Normal background
-fullwine.aged_reds = '#372f2f'
+fullwine.aged_reds = "#372f2f"
 
 local theme = setter.setter(fullwine)
 
