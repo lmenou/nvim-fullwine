@@ -106,6 +106,7 @@ function M.setter(fullwine)
     ErrorMsg = { fg = fullwine.malbec, bg = fullwine.none, style = "bold" },
     WarningMsg = { fg = fullwine.riesling, bg = fullwine.none, style = "bold" },
     ModeMsg = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
+    MoreMsg = { fg = fullwine.grenache, bg = fullwine.none },
     MatchParen = { fg = fullwine.riesling, bg = fullwine.wrong_reds, style = "undercurl" },
     NonText = { fg = fullwine.white_graves },
     Whitespace = { fg = fullwine.graves },
