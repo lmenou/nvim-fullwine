@@ -346,6 +346,9 @@ function M.setter(fullwine)
     ReferencesIcon = treesitter.TSTextReference,
     TargetFileName = syntax.Directory,
     TargetWord = syntax.Title,
+
+    -- Nvim-Cmp
+    CmpItemKind = { fg = fullwine.white_port },
   }
 
   if vim.g.fullwine_italicize == 0 then
