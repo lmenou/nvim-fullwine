@@ -59,6 +59,8 @@ The colorscheme support various famous plugins, namely:
 	- [ALE](https://github.com/dense-analysis/ale)
 	- [CoC](https://github.com/neoclide/coc.nvim)
 	- [LspSaga](https://github.com/glepnir/lspsaga.nvim)
+- Completion
+	- [Nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - Git Signs
 	- [Git-Gutter](https://github.com/emacsorphanage/git-gutter)
 	- [Git-Signs](https://github.com/lewis6991/gitsigns.nvim)
