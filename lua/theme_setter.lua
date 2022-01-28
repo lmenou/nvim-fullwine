@@ -134,7 +134,7 @@ function M.setter(fullwine)
     debugBreakpoint = { fg = fullwine.malbec, bg = fullwine.none },
 
     -- Dev environment
-    Boolean = { fg = fullwine.teroldeguo },
+    Boolean = { fg = fullwine.teroldeguo, bg = fullwine.none, style = "bold" },
     Number = { fg = fullwine.teroldeguo },
     Float = { fg = fullwine.teroldeguo },
     PreProc = { fg = fullwine.zinfandel },
