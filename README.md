@@ -69,8 +69,6 @@ The colorscheme support various famous plugins, namely:
 	- [NERDTree](https://github.com/preservim/nerdtree)
 	- [Fern](https://github.com/lambdalisue/fern.vim)
 	- [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
-- Indents
-	- [Vim-Indent-Guides](https://github.com/nathanaelkane/vim-indent-guides)
 - Motions
 	- [Easy-Motion](https://github.com/easymotion/vim-easymotion)
 	- [Vim-Sneak](https://github.com/justinmk/vim-sneak)

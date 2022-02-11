@@ -308,10 +308,6 @@ function M.setter(fullwine)
     GitSignsDeleteNr = { fg = fullwine.malbec },
     GitSignsDeleteLn = { fg = fullwine.malbec },
 
-    -- Vim-Indent-Guides (for gui only)
-    IndentGuidesOdd = { fg = fullwine.old_reds },
-    IndentGuidesEven = { fg = fullwine.passed_reds },
-
     -- NERDTree / Fern / NvimTree
     NERDTreeCWD = syntax.Label,
     NERDTreeUp = syntax.Operator,
