@@ -154,7 +154,7 @@ function M.setter(fullwine)
     Structure = { fg = fullwine.white_port, style = "bold" },
     Operator = { fg = fullwine.sauternes },
     Title = { fg = fullwine.riesling, bg = fullwine.none, style = "bold" },
-    Special = { fg = fullwine.white_port, bg = fullwine.none },
+    Special = { fg = fullwine.mourvedre, bg = fullwine.none },
     SpecialChar = { fg = fullwine.verdicchio },
     Type = { fg = fullwine.grenache },
     Function = { fg = fullwine.white_port, bg = fullwine.none, style = "bold" },
