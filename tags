@@ -1,0 +1,26 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/Users/lmenou/Documents/NVimPlugin/nvim-fullwine/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/0673dacf/
+Configuration :gear:	README.md	/^## Configuration :gear:$/;"	s	chapter:nvim-fullwine :grapes: :fallen_leaf:
+Contributing :thought_balloon:	README.md	/^## Contributing :thought_balloon:$/;"	s	chapter:nvim-fullwine :grapes: :fallen_leaf:
+Installation :incoming_envelope:	README.md	/^## Installation :incoming_envelope:$/;"	s	chapter:nvim-fullwine :grapes: :fallen_leaf:
+Italics :writing_hand:	README.md	/^### Italics :writing_hand:$/;"	S	section:nvim-fullwine :grapes: :fallen_leaf:""Configuration :gear:
+License :bookmark:	README.md	/^## License :bookmark:$/;"	s	chapter:nvim-fullwine :grapes: :fallen_leaf:
+Plugin support :zap:	README.md	/^### Plugin support :zap:$/;"	S	section:nvim-fullwine :grapes: :fallen_leaf:""Configuration :gear:
+Requirements :lock_with_ink_pen:	README.md	/^## Requirements :lock_with_ink_pen:$/;"	s	chapter:nvim-fullwine :grapes: :fallen_leaf:
+Tree-Sitter support :leaves:	README.md	/^### Tree-Sitter support :leaves:$/;"	S	section:nvim-fullwine :grapes: :fallen_leaf:""Configuration :gear:
+colorscheme	lua/fullwine.lua	/^  colorscheme = function()$/;"	f
+colorscheme	lua/fullwine_hard.lua	/^  colorscheme = function()$/;"	f
+colorscheme	lua/fullwine_soft.lua	/^  colorscheme = function()$/;"	f
+highlighter	lua/theme_setter.lua	/^M.highlighter = function(group, color)$/;"	f	unknown:M
+nvim-fullwine :grapes: :fallen_leaf:	README.md	/^# nvim-fullwine :grapes: :fallen_leaf:$/;"	c
+setter	lua/theme_setter.lua	/^function M.setter(fullwine)$/;"	f	unknown:M
+terminal_highlighter	lua/theme_setter.lua	/^M.terminal_highlighter = function(fullwine)$/;"	f	unknown:M
