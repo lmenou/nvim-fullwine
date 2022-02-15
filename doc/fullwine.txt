@@ -15,7 +15,7 @@ your |init.vim|, write:
 <
 But if you are already full lua, then at the end of your |init.lua|. write:
 >
-    require.('fullwine').colorscheme()
+    require('fullwine').colorscheme()
 <
 
 There exists a soft and a hard version of the fullwine colorscheme. To use or
@@ -60,7 +60,7 @@ supress tree-sitter support.
 <
 
 *g:fullwine_plugin_hi_group*
-*vim.fullwine_plugin_hi_group*
+*vim.g.fullwine_plugin_hi_group*
 
 The colorscheme supports some various and famous plugins, this is not enabled
 by default, you should turn on the supports explicitely by setting the latter
