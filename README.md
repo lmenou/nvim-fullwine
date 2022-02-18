@@ -37,20 +37,8 @@ commands specified above. Simple, isn't it ?
 ## Configuration :gear:
 
 ### Tree-Sitter support :leaves:
-The colorscheme support native-LSP and is supported by tree-sitter by default.
-
-If you did not installed tree-sitter, simply set the global value
-`fullwine_treesitter_support` to 0.  
-- vimL (in your init.vim)
-```vim
-let g:fullwine_treesitter_support = 0
-```
-or  
-
-- lua (in your init.lua)
-```lua
-vim.g.fullwine_treesitter_support = 0
-```
+The colorscheme support native-LSP and is supported by tree-sitter by default
+if installed (like all colorschemes, thanks to the core nvim team).
 
 ### Plugin support :zap:
 

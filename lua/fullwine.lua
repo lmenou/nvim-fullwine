@@ -24,12 +24,6 @@ return {
       highlight(group, colors)
     end
 
-    if vim.g.fullwine_treesitter_support == 1 or vim.g.fullwine_treesitter_support == nil then
-      for group, colors in pairs(theme.treesitter) do
-        highlight(group, colors)
-      end
-    end
-
     if vim.g.fullwine_plugin_hi_group == 1 then
       for group, colors in pairs(theme.plugin) do
         highlight(group, colors)

@@ -153,9 +153,9 @@ function M.setter(fullwine)
     Label = { fg = fullwine.zinfandel },
     Structure = { fg = fullwine.white_port, style = "bold" },
     Operator = { fg = fullwine.sauternes },
-    Title = { fg = fullwine.grenache, bg = fullwine.none, style = fullwine.none },
+    Title = { fg = fullwine.white_port, bg = fullwine.none, style = "bold" },
     Special = { fg = fullwine.mourvedre, bg = fullwine.none },
-    SpecialChar = { fg = fullwine.verdicchio },
+    SpecialChar = { fg = fullwine.zinfandel },
     Type = { fg = fullwine.grenache },
     Function = { fg = fullwine.white_port, bg = fullwine.none, style = "bold" },
     String = { fg = fullwine.verdicchio },
@@ -207,68 +207,6 @@ function M.setter(fullwine)
     LspDiagnosticsUnderlineHint = { fg = fullwine.verdicchio, style = "undercurl" },
     LspDiagnosticsUnderlineInfo = { fg = fullwine.verdicchio, style = "undercurl" },
     LspDiagnosticsUnderlineWarning = { fg = fullwine.riesling, style = "undercurl" },
-  }
-
-  local treesitter = {
-    TSAnnotation = { fg = fullwine.nebiolo, style = "bold" },
-    TSAttribute = syntax.Special,
-    TSBoolean = syntax.Boolean,
-    TSCharacter = syntax.Character,
-    TSConditional = syntax.Conditional,
-    TSConstBuiltin = { fg = fullwine.pinot_noir },
-    TSConstMacro = { fg = fullwine.pinot_noir },
-    TSConstant = syntax.Constant,
-    TSConstructor = syntax.Function,
-    TSEmphasis = { style = "italic" },
-    TSException = syntax.Exception,
-    TSField = { fg = fullwine.discus },
-    TSProperty = { fg = fullwine.discus },
-    TSFloat = syntax.Float,
-    TSFuncBuiltin = syntax.Function,
-    TSFuncMacro = syntax.Function,
-    TSFunction = syntax.Function,
-    TSInclude = syntax.Include,
-    TSKeyword = syntax.Keyword,
-    TSKeywordReturn = syntax.Keyword,
-    TSKeywordOperator = syntax.Keyword,
-    TSKeywordFunction = syntax.Keyword,
-    TSLabel = syntax.Label,
-    TSLiteral = { fg = fullwine.muscadet },
-    TSMethod = { fg = fullwine.sherry, style = "bold" },
-    TSNamespace = { fg = fullwine.white_port },
-    TSNumber = syntax.Number,
-    TSOperator = syntax.Operator,
-    TSParameterReference = { fg = fullwine.verdicchio },
-    TSPunctBracket = syntax.Delimiter,
-    TSPunctDelimiter = syntax.Delimiter,
-    TSPunctSpecial = { fg = fullwine.sauternes },
-    TSRepeat = syntax.Repeat,
-    TSStrike = { fg = fullwine.muscadet, bg = fullwine.wrong_reds, style = "italic" },
-    TSString = syntax.String,
-    TSStringEscape = { fg = fullwine.malbec },
-    TSStringRegex = { fg = fullwine.sherry },
-    TSStringSpecial = syntax.Special,
-    TSSymbol = { fg = fullwine.malbec },
-    TSTag = syntax.Tag,
-    TSTagDelimiter = syntax.Delimiter,
-    TSTagAttribute = syntax.Special,
-    TSText = { fg = fullwine.muscadet },
-    TSTextReference = { fg = fullwine.discus },
-    TSMath = { fg = fullwine.teroldeguo, style = "italic" },
-    TSEnvironment = { fg = fullwine.white_port },
-    TSEnvironmentName = { fg = fullwine.mourvedre, style = "bold" },
-    TSType = syntax.Type,
-    TSTypeBuiltin = syntax.Type,
-    TSURI = { fg = fullwine.teroldeguo, bg = fullwine.none, style = "underline" },
-    TSUnderline = syntax.Underlined,
-    TSVariableBuiltin = syntax.Special,
-    TSVariable = { fg = fullwine.muscadet },
-    TSWarning = syntax.WarningMsg,
-    TSComment = syntax.Comment,
-    TSNote = syntax.ModeMsg,
-    TSDanger = syntax.ErrorMsg,
-    TSTitle = syntax.Title,
-    -- TSError = syntax.ErrorMsg,
   }
 
   local plugin = {
@@ -346,7 +284,7 @@ function M.setter(fullwine)
     DefinitionCount = syntax.Number,
     DefinitionIcon = syntax.Special,
     ReferencesCount = syntax.Number,
-    ReferencesIcon = treesitter.TSTextReference,
+    ReferencesIcon = syntax.Boolean,
     TargetFileName = syntax.Directory,
     TargetWord = syntax.Title,
 
@@ -360,13 +298,11 @@ function M.setter(fullwine)
     syntax.StatusLine = { fg = fullwine.muscadet, bg = fullwine.passed_reds }
     syntax.Comment = { fg = fullwine.white_graves }
     syntax.SpecialComment = { fg = fullwine.white_graves }
-    treesitter.TSComment = { fg = fullwine.white_graves }
   end
 
   return {
     syntax = syntax,
     lspdiagnostic = lspdiagnostic,
-    treesitter = treesitter,
     plugin = plugin,
   }
 end
