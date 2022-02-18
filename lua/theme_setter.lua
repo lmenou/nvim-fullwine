@@ -10,8 +10,6 @@ M.colors = {
   aged_reds = "#372f2f",
   old_reds = "#644141",
   passed_reds = "#5a3939",
-  wrong_reds = "#7e4138",
-  light_reds = "#543636",
 
   -- foreground
   -- Yellow
@@ -91,13 +89,13 @@ function M.setter(fullwine)
     iCursor = { fg = fullwine.none, bg = fullwine.none, style = "reverse" },
     lCursor = { fg = fullwine.none, bg = fullwine.none, style = "reverse" },
     CursorIM = { fg = fullwine.none, bg = fullwine.none, style = "reverse" },
-    CursorColumn = { fg = fullwine.none, bg = fullwine.light_reds },
-    CursorLine = { fg = fullwine.none, bg = fullwine.light_reds },
+    CursorColumn = { fg = fullwine.none, bg = fullwine.old_reds },
+    CursorLine = { fg = fullwine.none, bg = fullwine.old_reds },
     LineNr = { fg = fullwine.sherry },
     LineNrAbove = { fg = fullwine.graves },
     LineNrBelow = { fg = fullwine.graves },
     qfLineNr = { fg = fullwine.graves },
-    CursorLineNr = { fg = fullwine.sherry, bg = fullwine.light_reds },
+    CursorLineNr = { fg = fullwine.sherry, bg = fullwine.old_reds },
     DiffAdd = { fg = fullwine.nebiolo, bg = fullwine.riesling },
     DiffChange = { fg = fullwine.muscadet, bg = fullwine.old_reds },
     DiffDelete = { fg = fullwine.muscadet, bg = fullwine.malbec },
@@ -107,17 +105,17 @@ function M.setter(fullwine)
     WarningMsg = { fg = fullwine.riesling, bg = fullwine.none, style = "bold" },
     ModeMsg = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
     MoreMsg = { fg = fullwine.grenache, bg = fullwine.none },
-    MatchParen = { fg = fullwine.riesling, bg = fullwine.wrong_reds, style = "undercurl" },
+    MatchParen = { fg = fullwine.riesling, bg = fullwine.passed_reds, style = "undercurl" },
     NonText = { fg = fullwine.white_graves },
     Whitespace = { fg = fullwine.graves },
     SpecialKey = { fg = fullwine.graves },
-    Pmenu = { fg = fullwine.muscadet, bg = fullwine.wrong_reds },
+    Pmenu = { fg = fullwine.muscadet, bg = fullwine.passed_reds },
     PmenuSel = { fg = fullwine.nebiolo, bg = fullwine.white_port, style = "italic" },
-    PmenuSbar = { fg = fullwine.none, bg = fullwine.wrong_reds },
+    PmenuSbar = { fg = fullwine.none, bg = fullwine.passed_reds },
     PmenuThumb = { fg = fullwine.none, bg = fullwine.syrah_rose },
     WildMenu = { fg = fullwine.muscadet, bg = fullwine.nebiolo, style = "italic" },
     Question = { fg = fullwine.verdicchio },
-    NormalFloat = { fg = fullwine.muscadet, bg = fullwine.wrong_reds },
+    NormalFloat = { fg = fullwine.muscadet, bg = fullwine.passed_reds },
     Tabline = { fg = fullwine.white_graves, bg = fullwine.old_reds },
     TabLineFill = { bg = fullwine.old_reds },
     TabLineSel = { fg = fullwine.white_port, bg = fullwine.old_reds },
@@ -133,7 +131,7 @@ function M.setter(fullwine)
     debugPC = { fg = fullwine.tempranillo, bg = fullwine.none },
     debugBreakpoint = { fg = fullwine.malbec, bg = fullwine.none },
 
-    -- Dev environment
+    -- Global Dev environment
     Boolean = { fg = fullwine.teroldeguo, bg = fullwine.none, style = "bold" },
     Number = { fg = fullwine.teroldeguo },
     Float = { fg = fullwine.teroldeguo },
@@ -168,7 +166,11 @@ function M.setter(fullwine)
     Todo = { fg = fullwine.muscadet, bg = fullwine.none, style = "bold" },
     Delimiter = { fg = fullwine.white_port },
     Ignore = { fg = fullwine.white_graves },
-    Underlined = { fg = fullwine.none, style = "underline" },
+    Underlined = { fg = fullwine.discus, style = "underline" },
+
+    -- Languages specific
+    -- Markdown
+    markdownHeadingDelimiter = { fg = fullwine.mourvedre },
   }
 
   local lspdiagnostic = {

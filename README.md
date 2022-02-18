@@ -20,7 +20,7 @@ Enter.
 
 If you wish to use it effectively:  
 - vimL (in your init.vim)  
-```vim
+```
 colorscheme fullwine
 ```
 or  
@@ -38,30 +38,14 @@ commands specified above. Simple, isn't it ?
 
 ### Tree-Sitter support :leaves:
 The colorscheme support native-LSP and is supported by tree-sitter by default
-if installed (like all colorschemes, thanks to the core nvim team).
+if installed (like all colorschemes, thanks to the nvim core team).
 
 ### Plugin support :zap:
 
-The colorscheme support various famous plugins, namely:
-- LSP / Linters
-	- [ALE](https://github.com/dense-analysis/ale)
-	- [CoC](https://github.com/neoclide/coc.nvim)
-	- [LspSaga](https://github.com/glepnir/lspsaga.nvim)
-- Completion
-	- [Nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
-- Git Signs
-	- [Git-Gutter](https://github.com/emacsorphanage/git-gutter)
-	- [Git-Signs](https://github.com/lewis6991/gitsigns.nvim)
-	- [Vim-Signify](https://github.com/mhinz/vim-signify)
-- File Explorers
-	- [NERDTree](https://github.com/preservim/nerdtree)
-	- [Fern](https://github.com/lambdalisue/fern.vim)
-	- [NvimTree](https://github.com/kyazdani42/nvim-tree.lua)
-- Motions
-	- [Easy-Motion](https://github.com/easymotion/vim-easymotion)
-	- [Vim-Sneak](https://github.com/justinmk/vim-sneak)
+The colorscheme support various famous plugins. See the lua table in
+`lua/theme_setter.lua` to check them.
 
-If you wish the highlighting for those plugins, you should turn this on. Note
+If you wish the highlighting for plugins, you should turn this on. Note
 that this might lead to bugs when switching away from the colorscheme.
 
 To turn the plugin support on, simply set the global variable
