@@ -13,10 +13,10 @@ M.colors = {
 
   -- foreground
   -- Yellow
-  muscadet = "#fcffca",
-  sherry = "#f3d171",
   white_port = "#ffa500",
+  sherry = "#f3d171",
   albarino = "#e3e07f",
+  muscadet = "#fcffca",
   -- Green
   riesling = "#e4db4a",
   sauternes = "#ffee19",
@@ -37,7 +37,6 @@ M.colors = {
   -- Grey
   graves = "#737373",
   white_graves = "#8e8e8e",
-  black_graves = "#323232",
   discus = "#cec7d4",
 }
 
@@ -52,7 +51,7 @@ M.highlighter = function(group, color)
 end
 
 M.terminal_highlighter = function(fullwine)
-  vim.g.terminal_color_0 = fullwine.black_graves
+  vim.g.terminal_color_0 = fullwine.aged_reds
   vim.g.terminal_color_1 = fullwine.malbec
   vim.g.terminal_color_2 = fullwine.riesling
   vim.g.terminal_color_3 = fullwine.albarino
@@ -79,7 +78,7 @@ function M.setter(fullwine)
     FoldColumn = { fg = fullwine.graves, bg = fullwine.aged_reds },
     VertSplit = { fg = fullwine.graves, bg = fullwine.aged_reds },
     Folded = { fg = fullwine.white_graves, bg = fullwine.aged_reds },
-    EndOfBuffer = { fg = fullwine.black_graves, bg = fullwine.none },
+    EndOfBuffer = { fg = fullwine.aged_reds, bg = fullwine.none },
     IncSearch = { fg = fullwine.old_reds, bg = fullwine.white_port, style = "bold" },
     Search = { fg = fullwine.old_reds, bg = fullwine.sherry, style = "bold" },
     ColorColumn = { fg = fullwine.none, bg = fullwine.tempranillo },
