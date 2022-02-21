@@ -21,7 +21,7 @@ M.colors = {
   riesling = "#e4db4a",
   sauternes = "#ffee19",
   verdicchio = "#cfe94e",
-  grenache = "#79a48f",
+  grenache = "#8abda4",
   -- Red
   tempranillo = "#8c2828",
   malbec = "#e60000",
