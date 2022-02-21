@@ -24,7 +24,7 @@ M.colors = {
   grenache = "#8abda4",
   -- Red
   tempranillo = "#8c2828",
-  malbec = "#e60000",
+  malbec = "#ff4530",
   nebiolo = "#a92900",
   -- Purple
   zinfandel = "#ffa9e2",
