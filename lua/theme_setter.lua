@@ -5,38 +5,42 @@
 local M = {}
 
 M.colors = {
-  -- background
-  -- Brown
+  -- Brown and Black
   aged_reds = "#372f2f",
   old_reds = "#644141",
   passed_reds = "#7e4138",
 
-  -- foreground
-  -- Yellow
+  -- Orange
   white_port = "#ffa500",
+  sauternes = "#ffee19",
+
+  -- White
   sherry = "#f3d171",
   albarino = "#e3e07f",
   muscadet = "#fcffca",
+
   -- Green
-  riesling = "#e4db4a",
-  sauternes = "#ffee19",
-  verdicchio = "#cfe94e",
   grenache = "#8abda4",
+  riesling = "#e4db4a",
+  verdicchio = "#cfe94e",
+
   -- Red
   tempranillo = "#8c2828",
-  malbec = "#ff4530",
   nebiolo = "#a92900",
+  malbec = "#ff4530",
+
   -- Purple
-  zinfandel = "#ffa9e2",
   syrah_rose = "#b84b4a",
   teroldeguo = "#e378a2 ",
-  pinot_noir = "#e54772 ",
-  mourvedre = "#ff9494",
+  zinfandel = "#ffa9e2",
 
-  -- comments
+  -- Pink
+  mourvedre = "#ff9494",
+  pinot_noir = "#e54772 ",
+
   -- Grey
-  graves = "#737373",
   white_graves = "#8e8e8e",
+  graves = "#737373",
   discus = "#cec7d4",
 }
 
