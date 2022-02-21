@@ -24,7 +24,7 @@ M.colors = {
   grenache = "#79a48f",
   -- Red
   tempranillo = "#8c2828",
-  malbec = "#f2002c",
+  malbec = "#e60000",
   nebiolo = "#a92900",
   -- Purple
   zinfandel = "#ffa9e2",
@@ -234,17 +234,7 @@ function M.setter(fullwine)
     SneakScope = syntax.DiffChange,
     SneakLabel = syntax.IncSearch,
 
-    -- Git-Futter / Git-Signs / Vim-Signify
-    GitGutterAdd = { fg = fullwine.verdicchio },
-    GitGutterChange = { fg = fullwine.white_port },
-    GitGutterDelete = { fg = fullwine.malbec },
-    GitGutterChangeDelete = { fg = fullwine.sherry },
-
-    SignifySignAdd = { fg = fullwine.verdicchio },
-    SignifySignChange = { fg = fullwine.white_port },
-    SignifySignDelete = { fg = fullwine.malbec },
-    SignifySignChangeDelete = { fg = fullwine.sherry },
-
+    -- Git-Signs
     GitSignsAdd = { fg = fullwine.verdicchio },
     GitSignsAddNr = { fg = fullwine.verdicchio },
     GitSignsAddLn = { fg = fullwine.verdicchio },
@@ -255,43 +245,7 @@ function M.setter(fullwine)
     GitSignsDeleteNr = { fg = fullwine.malbec },
     GitSignsDeleteLn = { fg = fullwine.malbec },
 
-    -- NERDTree / Fern / NvimTree
-    NERDTreeCWD = syntax.Label,
-    NERDTreeUp = syntax.Operator,
-    NERDTreeDir = syntax.Directory,
-    NERDTreeDirSlash = syntax.Delimiter,
-    NERDTreeOpenable = syntax.Directory,
-    NERDTreeClosable = syntax.Directory,
-    NERDTreeExecFile = syntax.Function,
-    NERDTreeLinkTarget = syntax.Tag,
-
-    FernSpinner = syntax.Label,
-    FernMarkedLine = syntax.Directory,
-    FernMarkedText = syntax.Tag,
-    FernWindowSelectIndicator = syntax.Operator,
-    FernWindowSelectStatusLine = syntax.Number,
-
-    NvimTreeRootFolder = syntax.Directory,
-    NvimTreeGitDirty = { fg = fullwine.muscadet },
-    NvimTreeGitNew = { fg = fullwine.nebiolo },
-    NvimTreeImageFile = { fg = fullwine.graves },
-    NvimTreeExecFile = syntax.Function,
-    NvimTreeSpecialFile = syntax.Tag,
-    NvimTreeFolderName = syntax.Directory,
-    NvimTreeEmptyFolderName = { fg = fullwine.none },
-    NvimTreeFolderIcon = { fg = fullwine.sherry },
-    NvimTreeIndentMarker = { fg = fullwine.none },
-
-    -- LSPSaga
-    DefinitionCount = syntax.Number,
-    DefinitionIcon = syntax.Special,
-    ReferencesCount = syntax.Number,
-    ReferencesIcon = syntax.Boolean,
-    TargetFileName = syntax.Directory,
-    TargetWord = syntax.Title,
-
-    -- Nvim-Cmp
-    CmpItemKind = { fg = fullwine.white_port },
+    -- TODO: tree / cmp / fern / dirvish
   }
 
   if vim.g.fullwine_italicize == 0 then
