@@ -9,7 +9,7 @@ M.colors = {
   -- Brown
   aged_reds = "#372f2f",
   old_reds = "#644141",
-  passed_reds = "#5a3939",
+  passed_reds = "#7e4138",
 
   -- foreground
   -- Yellow
