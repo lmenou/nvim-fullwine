@@ -35,7 +35,7 @@ M.colors = {
   zinfandel = "#ffa9e2",
 
   -- Pink
-  mourvedre = "#ff9494",
+  mourvedre = "#ffbaab",
   pinot_noir = "#e54772 ",
 
   -- Grey
@@ -94,7 +94,7 @@ function M.setter(fullwine)
     CursorIM = { fg = fullwine.none, bg = fullwine.none, style = "reverse" },
     CursorColumn = { fg = fullwine.none, bg = fullwine.old_reds },
     CursorLine = { fg = fullwine.none, bg = fullwine.old_reds },
-    LineNr = { fg = fullwine.sherry },
+    LineNr = { fg = fullwine.graves },
     LineNrAbove = { fg = fullwine.graves },
     LineNrBelow = { fg = fullwine.graves },
     qfLineNr = { fg = fullwine.graves },
