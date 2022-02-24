@@ -25,7 +25,7 @@ M.colors = {
   verdicchio = "#cfe94e",
 
   -- Red
-  tempranillo = "#8c2828",
+  tempranillo = "#d63e2d",
   nebiolo = "#a92900",
   malbec = "#ff4530",
 
@@ -56,7 +56,7 @@ end
 
 M.terminal_highlighter = function(fullwine)
   vim.g.terminal_color_0 = fullwine.aged_reds
-  vim.g.terminal_color_1 = fullwine.malbec
+  vim.g.terminal_color_1 = fullwine.tempranillo
   vim.g.terminal_color_2 = fullwine.riesling
   vim.g.terminal_color_3 = fullwine.albarino
   vim.g.terminal_color_4 = fullwine.discus
@@ -170,10 +170,6 @@ function M.setter(fullwine)
     Delimiter = { fg = fullwine.white_port },
     Ignore = { fg = fullwine.white_graves },
     Underlined = { fg = fullwine.discus, style = "underline" },
-
-    -- Languages specific
-    -- Markdown
-    markdownHeadingDelimiter = { fg = fullwine.mourvedre },
   }
 
   local lspdiagnostic = {
