@@ -20,10 +20,6 @@ return {
       highlight(group, colors)
     end
 
-    for group, colors in pairs(theme.lspdiagnostic) do
-      highlight(group, colors)
-    end
-
     if vim.g.fullwine_plugin_hi_group == 1 then
       for group, colors in pairs(theme.plugin) do
         highlight(group, colors)

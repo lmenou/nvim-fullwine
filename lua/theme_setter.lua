@@ -134,7 +134,7 @@ function M.setter(fullwine)
     debugPC = { fg = fullwine.tempranillo, bg = fullwine.none },
     debugBreakpoint = { fg = fullwine.malbec, bg = fullwine.none },
 
-    -- Global Dev environment
+    -- Syntax
     Boolean = { fg = fullwine.teroldeguo, bg = fullwine.none, style = "bold" },
     Number = { fg = fullwine.teroldeguo },
     Float = { fg = fullwine.teroldeguo },
@@ -170,40 +170,39 @@ function M.setter(fullwine)
     Delimiter = { fg = fullwine.white_port },
     Ignore = { fg = fullwine.white_graves },
     Underlined = { fg = fullwine.discus, style = "underline" },
-  }
 
-  local lspdiagnostic = {
+    -- LSP layout
     -- Diagnostic
-    DiagnosticError = syntax.ErrorMsg,
-    DiagnosticFloatingError = syntax.ErrorMsg,
-    DiagnosticSignError = syntax.ErrorMsg,
-    DiagnosticWarn = syntax.WarningMsg,
-    DiagnosticFloatingWarn = syntax.WarningMsg,
-    DiagnosticSignWarn = syntax.WarningMsg,
-    DiagnosticHint = syntax.ModeMsg,
-    DiagnosticFloatingHint = syntax.ModeMsg,
-    DiagnosticSignHint = syntax.ModeMsg,
-    DiagnosticInfo = syntax.ModeMsg,
-    DiagnosticFloatingInfo = syntax.ModeMsg,
-    DiagnosticSignInfo = syntax.ModeMsg,
+    DiagnosticError = { fg = fullwine.malbec, bg = fullwine.none, style = "bold" },
+    DiagnosticFloatingError = { fg = fullwine.malbec, bg = fullwine.none, style = "bold" },
+    DiagnosticSignError = { fg = fullwine.malbec, bg = fullwine.none, style = "bold" },
+    DiagnosticWarn = { fg = fullwine.riesling, bg = fullwine.none, style = "bold" },
+    DiagnosticFloatingWarn = { fg = fullwine.riesling, bg = fullwine.none, style = "bold" },
+    DiagnosticSignWarn = { fg = fullwine.riesling, bg = fullwine.none, style = "bold" },
+    DiagnosticHint = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
+    DiagnosticFloatingHint = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
+    DiagnosticSignHint = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
+    DiagnosticInfo = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
+    DiagnosticFloatingInfo = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
+    DiagnosticSignInfo = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
     DiagnosticUnderlineError = { fg = fullwine.malbec, style = "undercurl" },
     DiagnosticUnderlineHint = { fg = fullwine.verdicchio, style = "undercurl" },
     DiagnosticUnderlineInfo = { fg = fullwine.verdicchio, style = "undercurl" },
     DiagnosticUnderlineWarn = { fg = fullwine.riesling, style = "undercurl" },
 
-    -- LspDiagnostic
-    LspDiagnosticsDefaultError = syntax.ErrorMsg,
-    LspDiagnosticsFloatingError = syntax.ErrorMsg,
-    LspDiagnosticsSignError = syntax.ErrorMsg,
-    LspDiagnosticsDefaultWarning = syntax.WarningMsg,
-    LspDiagnosticsFloatingWarning = syntax.WarningMsg,
-    LspDiagnosticsSignWarning = syntax.WarningMsg,
-    LspDiagnosticsDefaultHint = syntax.ModeMsg,
-    LspDiagnosticsFloatingHint = syntax.ModeMsg,
-    LspDiagnosticsSignHint = syntax.ModeMsg,
-    LspDiagnosticsDefaultInformation = syntax.ModeMsg,
-    LspDiagnosticsFloatingInformation = syntax.ModeMsg,
-    LspDiagnosticsSignInformation = syntax.ModeMsg,
+    -- LspDiagnostic: Backward compatibility
+    LspDiagnosticsDefaultError = { fg = fullwine.malbec, bg = fullwine.none, style = "bold" },
+    LspDiagnosticsFloatingError = { fg = fullwine.malbec, bg = fullwine.none, style = "bold" },
+    LspDiagnosticsSignError = { fg = fullwine.malbec, bg = fullwine.none, style = "bold" },
+    LspDiagnosticsDefaultWarning = { fg = fullwine.riesling, bg = fullwine.none, style = "bold" },
+    LspDiagnosticsFloatingWarning = { fg = fullwine.riesling, bg = fullwine.none, style = "bold" },
+    LspDiagnosticsSignWarning = { fg = fullwine.riesling, bg = fullwine.none, style = "bold" },
+    LspDiagnosticsDefaultHint = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
+    LspDiagnosticsFloatingHint = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
+    LspDiagnosticsSignHint = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
+    LspDiagnosticsDefaultInformation = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
+    LspDiagnosticsFloatingInformation = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
+    LspDiagnosticsSignInformation = { fg = fullwine.verdicchio, bg = fullwine.none, style = "bold" },
     LspDiagnosticsUnderlineError = { fg = fullwine.malbec, style = "undercurl" },
     LspDiagnosticsUnderlineHint = { fg = fullwine.verdicchio, style = "undercurl" },
     LspDiagnosticsUnderlineInfo = { fg = fullwine.verdicchio, style = "undercurl" },
@@ -212,18 +211,18 @@ function M.setter(fullwine)
 
   local plugin = {
     -- ALE
-    ALEErrorSign = lspdiagnostic.DiagnosticError,
-    ALEWarningSign = lspdiagnostic.DiagnosticHint,
+    ALEErrorSign = syntax.DiagnosticError,
+    ALEWarningSign = syntax.DiagnosticHint,
 
     -- COC
-    CocErrorHighlight = lspdiagnostic.DiagnosticUnderlineError,
-    CocErrorSign = lspdiagnostic.DiagnosticSignError,
-    CocHintHighlight = lspdiagnostic.DiagnosticUnderlineHint,
-    CocHintSign = lspdiagnostic.DiagnosticSignHint,
-    CocInfoHighlight = lspdiagnostic.DiagnosticUnderlineInfo,
-    CocInfoSign = lspdiagnostic.DiagnosticSignInfo,
-    CocWarningHighlight = lspdiagnostic.DiagnosticUnderlineWarn,
-    CocWarningSign = lspdiagnostic.DiagnosticSignWarn,
+    CocErrorHighlight = syntax.DiagnosticUnderlineError,
+    CocErrorSign = syntax.DiagnosticSignError,
+    CocHintHighlight = syntax.DiagnosticUnderlineHint,
+    CocHintSign = syntax.DiagnosticSignHint,
+    CocInfoHighlight = syntax.DiagnosticUnderlineInfo,
+    CocInfoSign = syntax.DiagnosticSignInfo,
+    CocWarningHighlight = syntax.DiagnosticUnderlineWarn,
+    CocWarningSign = syntax.DiagnosticSignWarn,
 
     -- Easy-Motion / Sneak-Ease
     EasyMotion = syntax.IncSearch,
@@ -257,7 +256,6 @@ function M.setter(fullwine)
 
   return {
     syntax = syntax,
-    lspdiagnostic = lspdiagnostic,
     plugin = plugin,
   }
 end
