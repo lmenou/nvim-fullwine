@@ -1,4 +1,4 @@
-*fullwine.txt*	 Neovim colorscheme inspired from the colors of Bacchus
+*fullwine.txt*   Neovim colorscheme inspired from the colors of Bacchus
 
 Author: lmenou
 License: Apache 2.0 (See LICENSE file for details)
@@ -22,12 +22,12 @@ There exists a soft and a hard version of the fullwine colorscheme. To use or
 try them, replace `fullwine` by respectively `fullwine_soft` and
 `fullwine_hard` in the commands specified above. Simple, isn't it ?
 
-1. Configuration	|fullwine-configuration|
-2. Contributing		|fullwine-contributing|
-3. Acknowledgements	|fullwine-acknowledgements|
+1. Configuration    |fullwine-configuration|
+2. Contributing     |fullwine-contributing|
+3. Acknowledgements |fullwine-acknowledgements|
 
 ============================================================================
-1. Configuration	*fullwine-configuration*
+1. Configuration    *fullwine-configuration*
 
 *g:fullwine_italicize* 
 *vim.g.fullwine_italicize* 
@@ -38,11 +38,11 @@ comments in the code. Set the following value to 0 to suppress italics.
 
 - vimL (|init.vim|)
 >
-	let g:fullwine_italicize = 1
+    let g:fullwine_italicize = 1
 <
 - lua (|init.lua|)
 >
-	vim.g.fullwine_italicize = 1
+    vim.g.fullwine_italicize = 1
 <
 *g:fullwine_plugin_hi_group*
 *vim.g.fullwine_plugin_hi_group*
@@ -54,15 +54,15 @@ colorschemes.
 
 - vimL (|init.vim|)
 >
-	let g:fullwine_plugin_hi_group = 1
+    let g:fullwine_plugin_hi_group = 1
 <
 - lua (|init.lua|)
 >
-	vim.g.fullwine_plugin_hi_group = 1
+    vim.g.fullwine_plugin_hi_group = 1
 <
 
 ============================================================================
-2. Contributing		*fullwine-contributing*
+2. Contributing     *fullwine-contributing*
 
 If you are unsatisfied with some specifications of the colorscheme, please
 feel free to raise an issue at https://github.com/lmenou/nvim-fullwine/issues
@@ -73,7 +73,7 @@ If you encounter a bug with the colorscheme, please feel free to report it
 also.
 
 ============================================================================
-3. Acknowledgements	  |fullwine-acknowledgements|
+3. Acknowledgements   *fullwine-acknowledgements*
 
 First, thank you for giving a try to the colorscheme.
 
@@ -83,3 +83,5 @@ Credits for the inspiration (mostly the code-base):
 - vim-gruvbox8 -- https://github.com/lifepillar/vim-gruvbox8
 - gruvbox -- https://github.com/morhetz/gruvbox
 - zephyr-nvim -- https://github.com/glepnir/zephyr-nvim
+
+ vim:tw=78:et:ft=help:norl:
