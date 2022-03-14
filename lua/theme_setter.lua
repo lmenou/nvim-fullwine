@@ -108,7 +108,7 @@ function M.setter(fullwine)
     WarningMsg = { fg = fullwine.riesling, style = "bold" },
     ModeMsg = { fg = fullwine.verdicchio, style = "bold" },
     MoreMsg = { fg = fullwine.grenache },
-    MatchParen = { fg = fullwine.riesling, bg = fullwine.passed_reds, style = "undercurl" },
+    MatchParen = { fg = fullwine.riesling, bg = fullwine.passed_reds, style = "underline" },
     NonText = { fg = fullwine.graves },
     Whitespace = { fg = fullwine.graves },
     SpecialKey = { fg = fullwine.graves },
@@ -261,5 +261,3 @@ function M.setter(fullwine)
 end
 
 return M
-
--- lua: et tw=79 ts=2 sts=2 sw=2
