@@ -243,7 +243,23 @@ function M.setter(fullwine)
     GitSignsDeleteNr = { fg = fullwine.malbec },
     GitSignsDeleteLn = { fg = fullwine.malbec },
 
-    -- TODO: tree / cmp / fern / dirvish
+    -- Dirvish
+    DirvishPathHead = syntax.Directory,
+    DirvishPathTail = syntax.Operator,
+    DirvishSuffix = syntax.SpecialChar,
+    DirvishArg = syntax.Type,
+
+    -- NvimTree
+    NvimTreeSymlink = syntax.Special,
+    NvimTreeFolderName = syntax.Directory,
+    NvimTreeRootFolder = syntax.Directory,
+    NvimTreeFolderIcon = syntax.String,
+    NvimTreeEmptyFolderName = syntax.Directory,
+    NvimTreeOpenedFolderName = syntax.Directory,
+    NvimTreeExecFile = syntax.Include,
+    NvimTreeImageFile = syntax.Comment,
+
+    -- TODO: tree / cmp / fern
   }
 
   if vim.g.fullwine_italicize == 0 then
