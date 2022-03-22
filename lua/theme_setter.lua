@@ -79,7 +79,7 @@ function M.setter(fullwine)
     Normal = { fg = fullwine.muscadet, bg = fullwine.aged_reds },
     Terminal = { fg = fullwine.muscadet, bg = fullwine.aged_reds },
     SignColumn = { fg = fullwine.none },
-    FoldColumn = { fg = fullwine.graves, bg = fullwine.aged_reds },
+    FoldColumn = { fg = fullwine.white_graves, bg = fullwine.aged_reds },
     VertSplit = { fg = fullwine.graves, bg = fullwine.aged_reds },
     Folded = { fg = fullwine.white_graves, bg = fullwine.aged_reds },
     EndOfBuffer = { fg = fullwine.graves },
