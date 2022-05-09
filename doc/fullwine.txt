@@ -17,11 +17,6 @@ But if you are already full lua, then at the end of your |init.lua|. write:
 >
     require('fullwine').colorscheme()
 <
-
-There exists a soft and a hard version of the fullwine colorscheme. To use or
-try them, replace `fullwine` by respectively `fullwine_soft` and
-`fullwine_hard` in the commands specified above. Simple, isn't it ?
-
 1. Configuration    |fullwine-configuration|
 2. Contributing     |fullwine-contributing|
 3. Acknowledgements |fullwine-acknowledgements|
