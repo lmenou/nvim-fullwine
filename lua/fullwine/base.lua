@@ -227,7 +227,12 @@ local plugin = {
   NvimTreeExecFile = syntax.Include,
   NvimTreeImageFile = syntax.Comment,
 
-  -- TODO: tree / cmp / fern
+  -- Fern
+  FernSpinner = syntax.Special,
+  FernMarkedLine = syntax.Tag,
+  FernWindowSelectIndicator = syntax.IncSearch,
+
+  -- TODO: cmp
 }
 
 if vim.g.fullwine_italicize == 0 then
