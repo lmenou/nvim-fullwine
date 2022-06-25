@@ -232,7 +232,9 @@ local plugin = {
   FernMarkedLine = syntax.Tag,
   FernWindowSelectIndicator = syntax.IncSearch,
 
-  -- TODO: cmp
+  -- Cmp
+  CmpItemAbbrMatch = { fg = fullwine.white_port },
+  CmpItemAbbrMatchFuzzy = { fg = fullwine.white_port },
 }
 
 if vim.g.fullwine_italicize == 0 then
