@@ -39,7 +39,7 @@ if installed (like all colorschemes, thanks to the nvim core team).
 ### Plugin support :zap:
 
 The colorscheme support various famous plugins. See the lua table in
-`lua/theme_setter.lua` to check them.
+`lua/base.lua` to check them.
 
 If you wish the highlighting for plugins, you should turn this on. Note
 that this might lead to bugs when switching away from the colorscheme.
