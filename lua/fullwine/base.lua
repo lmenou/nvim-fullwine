@@ -139,8 +139,7 @@ local syntax = {
   Ignore = { fg = fullwine.white_graves },
   Underlined = { fg = fullwine.discus, style = "underline" },
 
-  -- LSP layout
-  -- Diagnostic
+  -- Diagnostics
   DiagnosticError = { fg = fullwine.malbec, style = "bold" },
   DiagnosticFloatingError = { fg = fullwine.malbec, style = "bold" },
   DiagnosticSignError = { fg = fullwine.malbec, style = "bold" },
@@ -157,24 +156,6 @@ local syntax = {
   DiagnosticUnderlineHint = { fg = fullwine.verdicchio, style = "undercurl" },
   DiagnosticUnderlineInfo = { fg = fullwine.verdicchio, style = "undercurl" },
   DiagnosticUnderlineWarn = { fg = fullwine.riesling, style = "undercurl" },
-
-  -- LspDiagnostic: Backward compatibility
-  LspDiagnosticsDefaultError = { fg = fullwine.malbec, style = "bold" },
-  LspDiagnosticsFloatingError = { fg = fullwine.malbec, style = "bold" },
-  LspDiagnosticsSignError = { fg = fullwine.malbec, style = "bold" },
-  LspDiagnosticsDefaultWarning = { fg = fullwine.riesling, style = "bold" },
-  LspDiagnosticsFloatingWarning = { fg = fullwine.riesling, style = "bold" },
-  LspDiagnosticsSignWarning = { fg = fullwine.riesling, style = "bold" },
-  LspDiagnosticsDefaultHint = { fg = fullwine.verdicchio, style = "bold" },
-  LspDiagnosticsFloatingHint = { fg = fullwine.verdicchio, style = "bold" },
-  LspDiagnosticsSignHint = { fg = fullwine.verdicchio, style = "bold" },
-  LspDiagnosticsDefaultInformation = { fg = fullwine.verdicchio, style = "bold" },
-  LspDiagnosticsFloatingInformation = { fg = fullwine.verdicchio, style = "bold" },
-  LspDiagnosticsSignInformation = { fg = fullwine.verdicchio, style = "bold" },
-  LspDiagnosticsUnderlineError = { fg = fullwine.malbec, style = "undercurl" },
-  LspDiagnosticsUnderlineHint = { fg = fullwine.verdicchio, style = "undercurl" },
-  LspDiagnosticsUnderlineInfo = { fg = fullwine.verdicchio, style = "undercurl" },
-  LspDiagnosticsUnderlineWarning = { fg = fullwine.riesling, style = "undercurl" },
 }
 
 local plugin = {

@@ -4,11 +4,11 @@
 !_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
 !_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
 !_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
-!_TAG_PROC_CWD	/Users/lmenou/Documents/NVimPlugin/nvim-fullwine/	//
+!_TAG_PROC_CWD	/Users/lmenou/.local/share/nvim/site/pack/plugins/start/nvim-fullwine/	//
 !_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
 !_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
-!_TAG_PROGRAM_VERSION	5.9.0	/0673dacf/
+!_TAG_PROGRAM_VERSION	5.9.0	//
 Configuration :gear:	README.md	/^## Configuration :gear:$/;"	s	chapter:nvim-fullwine :grapes: :fallen_leaf:
 Contributing :thought_balloon:	README.md	/^## Contributing :thought_balloon:$/;"	s	chapter:nvim-fullwine :grapes: :fallen_leaf:
 Installation :incoming_envelope:	README.md	/^## Installation :incoming_envelope:$/;"	s	chapter:nvim-fullwine :grapes: :fallen_leaf:
