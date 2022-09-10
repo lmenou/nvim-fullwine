@@ -6,8 +6,7 @@ The colorscheme is supported by tree-sitter.
 
 ## Requirements :lock_with_ink_pen:
 - [Neovim 0.5](https://github.com/neovim/neovim)  
-- If using the terminal as the UI, the latter should support gui colors, i.e `set
-  termguicolors` is on by default.
+- If using the terminal as the UI, the latter should support gui colors
 
 ## Installation :incoming_envelope:
 With your favourite plugin manager, you can have a look at
@@ -21,12 +20,14 @@ Enter.
 If you wish to use it effectively:  
 - vimL (in your init.vim)  
 ```
+set termguicolors
 colorscheme fullwine
 ```
 or  
 
 - lua (in your init.lua)
 ```
+vim.opt.termguicolors = true
 require('fullwine').colorscheme()
 ```
 
