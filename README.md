@@ -2,7 +2,7 @@
 Neovim colorscheme in lua inspired from the colors of Bacchus, autumn and wine.  
 The colorscheme is supported by tree-sitter.
 
-![fullwine](examples/example_fullwine.png)
+<img width="1440" alt="example_fullwine" src="https://user-images.githubusercontent.com/72404196/189489247-a833dac3-91ed-4606-8577-c77b264b6e6b.png">
 
 ## Requirements :lock_with_ink_pen:
 - [Neovim 0.5](https://github.com/neovim/neovim)  
